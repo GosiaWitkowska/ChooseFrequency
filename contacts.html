@@ -129,10 +129,7 @@
                 </div>-->
 				<div class="form-button group-sm text-center text-lg-left">
                   
-					<button class="button button-primary g-recaptcha" 
-					data-sitekey="6LeW0e4hAAAAAIzPf6U0JmlROpOVqoP4ROs5z926" 
-					data-callback='onSubmit' 
-					data-action='submit' type="submit">Submit</button>
+					<button class="button button-primary" type="submit">Submit</button>
                 </div>
               </form>
             </div>
@@ -168,11 +165,16 @@
     <div class="snackbars" id="form-output-global"></div>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
-	<script src="https://www.google.com/recaptcha/api.js"></script>
-	 <script>
-	   function onSubmit(token) {
-		 document.getElementById("demo-form").submit();
-	   }
-	 </script>
+	<script src="https://www.google.com/recaptcha/api.js?render=6LeW0e4hAAAAAIzPf6U0JmlROpOVqoP4ROs5z926"></script>
+	<script>
+      function onClick(e) {
+        e.preventDefault();
+        grecaptcha.ready(function() {
+          grecaptcha.execute('6LeW0e4hAAAAAIzPf6U0JmlROpOVqoP4ROs5z926', {action: 'submit'}).then(function(token) {
+              // Add your logic to submit to your backend server here.
+          });
+        });
+      }
+	</script>
   </body>
 </html>
