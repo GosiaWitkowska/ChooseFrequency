@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
-	<script src="https://smtpjs.com/v3/smtp.js"></script>
-    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+	<style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
   <body>
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
@@ -110,6 +109,7 @@
 
 			
               <form id="contact-form1" action="https://formsubmit.co/0bd0283d384637ed1280ef44ac4b2195" method="POST"> 
+				<input type="hidden" name="_subject" value="QUESTION FROM THE WEBSITE">
                 <div class="form-wrap">
                   <label class="form-label" for="contact-name">Name<span class="req-symbol">*</span></label>
                   <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
@@ -163,30 +163,5 @@
     <div class="snackbars" id="form-output-global"></div>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
-	<script src="https://www.google.com/recaptcha/api.js?render=6LeW0e4hAAAAAIzPf6U0JmlROpOVqoP4ROs5z926"></script>
-	<script>
-		$("#contact-form").submit(function(){
-			//grecaptcha.ready(function() {
-				//grecaptcha.execute('6LeW0e4hAAAAAIzPf6U0JmlROpOVqoP4ROs5z926', {action: 'submit'}).then(function(token) {
-				
-				var $name = $('#contact-name').val();
-				var $email = $("#contact-email").val();
-				var $msg = $("#contact-message").val();
-				
-				Email.send({
-					Host : "smtp.gmail.com",
-					Username : "choosefrequency@gmail.com",
-					Password : "ymbnysyrelxlenda",
-					To : "choosefrequency@gmail.com",
-					From : $email,
-					Subject : `QUESTION FROM WEBSITE - ${name}`,
-					Body : $msg
-				});
-
-				//ymbnysyrelxlenda
-			  });
-			//});
-		//});
-	</script>
   </body>
 </html>
