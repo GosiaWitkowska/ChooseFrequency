@@ -164,7 +164,7 @@
 	<script src="https://www.google.com/recaptcha/api.js?render=6LeW0e4hAAAAAIzPf6U0JmlROpOVqoP4ROs5z926"></script>
 	<script>
       function onClick(e) {
-        e.preventDefault();
+       // e.preventDefault();
         grecaptcha.ready(function() {
           grecaptcha.execute('6LeW0e4hAAAAAIzPf6U0JmlROpOVqoP4ROs5z926', {action: 'submit'}).then(function(token) {
             
