@@ -1,14 +1,3 @@
-/*
-Copyright 2020 Adobe
-All Rights Reserved.
-
-NOTICE: Adobe permits you to use, modify, and distribute this file in
-accordance with the terms of the Adobe license agreement accompanying
-it. If you have received this file from a source other than Adobe,
-then your use, modification, or distribution of it requires the prior
-written permission of Adobe.
-*/
-
 /* Pass the embed mode option here */
 const viewerConfig = {
     embedMode: "LIGHT_BOX"
@@ -37,11 +26,15 @@ function previewFile()
             location: {
                 url: "https://choosefrequency.com/FightingCodependency.pdf",
                 
-                If the file URL requires some additional headers, then it can be passed as follows:-
+                //If the file URL requires some additional headers, then it can be passed as follows:-
                 header: [
                     {
                         key: "GGW-SH-*-trackingId",
                         value: "new-trackingId",
+                    },
+					{
+                        key: "GGW-SH-differentSource-trackingId",
+                        value: "different-trackingId",
                     }
                 ]
                 
