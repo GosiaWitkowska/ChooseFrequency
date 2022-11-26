@@ -25,7 +25,7 @@ function previewFile()
     /* Initialize the AdobeDC View object */
     var adobeDCView = new AdobeDC.View({
         /* Pass your registered client id */
-        clientId: "<YOUR_CLIENT_ID>"
+        clientId: "5ace8d864bf548a49dbb1e1732f5692b"
     });
 
     /* Invoke the file preview API on Adobe DC View object */
