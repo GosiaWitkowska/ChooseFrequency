@@ -36,15 +36,15 @@ function previewFile()
             /* Location of file where it is hosted */
             location: {
                 url: "https://choosefrequency.com/FightingCodependency.pdf",
-                /*
+                
                 If the file URL requires some additional headers, then it can be passed as follows:-
                 header: [
                     {
-                        key: "<HEADER_KEY>",
-                        value: "<HEADER_VALUE>",
+                        key: "GGW-SH-*-trackingId",
+                        value: "new-trackingId",
                     }
                 ]
-                */
+                
             },
         },
         /* Pass meta data of file */
