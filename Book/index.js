@@ -22,6 +22,7 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
 /* Function to render the file using PDF Embed API. */
 function previewFile()
 {
+
     /* Initialize the AdobeDC View object */
     var adobeDCView = new AdobeDC.View({
         /* Pass your registered client id */
