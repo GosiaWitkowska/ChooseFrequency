@@ -29,12 +29,16 @@ function previewFile()
                 //If the file URL requires some additional headers, then it can be passed as follows:-
                 header: [
                     {
-                        key: "GGW-SH-*-trackingId",
-                        value: "new-trackingId",
+                        key: "access-control-allow-headers",
+                        value: "access-control-allow-origin",
                     },
 					{
-                        key: "GGW-SH-differentSource-trackingId",
-                        value: "different-trackingId",
+                        key: "access-control-allow-methods",
+                        value: "OPTIONS, HEAD, DELETE, POST, GET",
+                    },
+										{
+                        key: "access-control-allow-origin",
+                        value: "*",
                     }
                 ]
                 
