@@ -15,7 +15,7 @@ function previewFile()
     /* Initialize the AdobeDC View object */
     var adobeDCView = new AdobeDC.View({
         /* Pass your registered client id */
-        clientId: "5ace8d864bf548a49dbb1e1732f5692b"
+        clientId: "263e801694324c18a963abd1af19b672"
     });
 
     /* Invoke the file preview API on Adobe DC View object */
@@ -24,7 +24,7 @@ function previewFile()
         content: {
             /* Location of file where it is hosted */
             location: {
-                url: "https://choosefrequency.com/FightingCodependency.pdf",
+                url: "https://drive.google.com/file/d/1nZCbk7jdhwYbTsO0NRHB5DS3EVX_yqw9/view?usp=share_link",
                 
                 //If the file URL requires some additional headers, then it can be passed as follows:-
                 header: [
