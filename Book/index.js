@@ -34,7 +34,7 @@ function previewFile()
         content: {
             /* Location of file where it is hosted */
             location: {
-                url: "www.choosefrequency.com/book/FightingCodependency.pdf",
+                url: "https://choosefrequency.com/FightingCodependency.pdf",
                 /*
                 If the file URL requires some additional headers, then it can be passed as follows:-
                 header: [
