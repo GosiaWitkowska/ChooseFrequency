@@ -4675,11 +4675,11 @@ h3 + img {
 * + .text-block {
 	margin-top: 30px;
 }
-
+/*
 * + .button {
 	margin-top: 30px;
 }
-
+*/
 .row + h3,
 .row + .heading-3 {
 	margin-top: 80px;
