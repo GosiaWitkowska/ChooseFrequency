@@ -594,11 +594,11 @@ a[href*='tel'], a[href*='mailto'] {
 		font-size: 18px;
 	}
 }
-@media (min-width: 1200px)
-.collaboration_container {
-    max-width: 1700px;
-}
+
 @media (min-width: 1200px) {
+	.collaboration_container {
+    		max-width: 1700px;
+	}
 	.box-counter-main {
 		font-size: 60px;
 	}
