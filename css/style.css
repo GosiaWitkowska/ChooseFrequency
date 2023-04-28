@@ -8805,4 +8805,18 @@ html.rd-navbar-fixed-linked .page {
 		background-position: center;
 		background-image:url('../images/youtubeBanner.png') !important;
 	}
+	.first-picture {
+		display: none;
+	}
+	.book_small {
+		display: inline;
+		padding-left: 10px;
+	}
 }
+
+@media not screen and (max-width: 600px) {
+	.book_small {
+		display: none;
+	}
+}
+
