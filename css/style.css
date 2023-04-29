@@ -5048,6 +5048,7 @@ html [class*='section-'].section-bottom-0 {
 	.main-section {
 		padding: 220px 0 50px 0;
 		background-repeat: no-repeat;
+		background-size: cover;
 	}
 }
 
