@@ -1609,6 +1609,24 @@ hr {
 	transition: 250ms all ease-in-out;
 }
 
+.firstImg
+    {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+.book
+{
+  position: absolute;
+  top: -20px;
+  left: -50px;
+}
+.overlay_images
+{
+	position: relative; 
+	left: 0; 
+	top: 0;
+}
 .button-width-210 {
 	min-width: 210px;
 }
