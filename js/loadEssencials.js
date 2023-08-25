@@ -109,23 +109,108 @@ element.innerHTML =
 +"  </nav>"
 +"</div>";
 
-if (element.classList.contains("header-blog")) {
+if (!element.classList.contains("header-home"))
+element.innerHTML = element.innerHTML +	
+"<section class='section section-intro context-dark'>"
++"  <div id='headerTitleImage' class='intro-bg'></div>"
++"  <div class='container'>"
++"   <div class='row justify-content-center'>"
++"	<div class='col-xl-8 text-center'>"
++"	  <div class='rd-navbar-brand'>"
++"		<!--Brand--><a href='index.html'><img class='brand-logo-dark' src='images/CF_LogoCircle.png' alt='' style='width:100%; height:auto; max-width:40px;'/></a>"
++"	  </div>"			
++"	  <h1 id='headerTitleMainText' class='font-weight-bold wow fadeInLeft'></h1>"
++"    <p id='headerTitleSubText' class='intro-description wow fadeInRight'></p>"
++"	</div>"
++"  </div>"
++"</div>"
++"</section>";
+
+
+
+if (element.classList.contains("header-blog") || element.classList.contains("header-blogPage")) {
 	var element = document.getElementById('menu-blog');
 	element.classList.add("active");
+	
+	var element = document.getElementById('headerTitleImage');
+	element.style = "background: url(images/breadcrumbs-post.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	
+	var element = document.getElementById('headerTitleMainText');
+	element.innerHTML = "Blog";
 }
 if (element.classList.contains("header-about")) {
 	var element = document.getElementById('menu-about');
 	element.classList.add("active");
+	
+	var element = document.getElementById('headerTitleImage');
+	element.style = "background: url(images/breadcrumbs-map.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	
+	var element = document.getElementById('headerTitleMainText');
+	element.innerHTML = "About Me";
 }
 if (element.classList.contains("header-contact")) {
 	var element = document.getElementById('menu-contact');
 	element.classList.add("active");
+	
+	var element = document.getElementById('headerTitleImage');
+	element.style = "background: url(images/breadcrumbs-503.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	
+	var element = document.getElementById('headerTitleMainText');
+	element.innerHTML = "Contact Me";
+	
+	var element = document.getElementById('headerTitleSubText');
+	element.innerHTML = 
+	"<h3 class='font-weight-bold wow fadeInLeft'>call: +44 7758748210</h3>"
+	+"<p class='intro-description wow fadeInRight'>or send your questions below</p>"
+	+"<p class='intro-description wow fadeInRight'>I usually respond within 24 hours.</p>"	
 }
 if (element.classList.contains("header-collaboration")) {
 	var element = document.getElementById('menu-collaboration');
 	element.classList.add("active");
+	var element = document.getElementById('headerTitleImage');
+	element.style = "background:url(images/breadcrumbs-careers.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	
+	var element = document.getElementById('headerTitleMainText');
+	element.innerHTML = "Collaboration";
+	
+	var element = document.getElementById('headerTitleSubText');
+	element.innerHTML = "Having access to other specialists and being able to collaborate with them helps my clients and allows them to receive the best service.";
 }
 if (element.classList.contains("header-home")) {
 	var element = document.getElementById('menu-home');
 	element.classList.add("active");
 }
+if (element.classList.contains("header-terms")) {
+
+	var element = document.getElementById('headerTitleImage');
+	element.style = "background:url(images/breadcrumbs-about.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	
+	var element = document.getElementById('headerTitleMainText');
+	element.innerHTML = "Terms and Conditions";
+	
+	var element = document.getElementById('headerTitleSubText');
+	element.innerHTML = "call: +44 7758748210";
+}
+if (element.classList.contains("header-thankyou")) {
+
+	var element = document.getElementById('headerTitleImage');
+	element.style = "background:url(images/breadcrumbs-about.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	
+	var element = document.getElementById('headerTitleMainText');
+	element.innerHTML = "Thank you for sending your question.";
+	
+	var element = document.getElementById('headerTitleSubText');
+	element.innerHTML = "I usually respond within 24 hours.";
+}
+if (element.classList.contains("header-thankyouforbooking")) {
+
+	var element = document.getElementById('headerTitleImage');
+	element.style = "background:url(images/breadcrumbs-about.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	
+	var element = document.getElementById('headerTitleMainText');
+	element.innerHTML = "Thank you<h1> <label name='invitee_full_name'></label> for booking your session with Choose Frequency";
+	
+	var element = document.getElementById('headerTitleSubText');
+	element.innerHTML = "A calendar invitation has been sent to your email address";
+}
+
