@@ -33,7 +33,11 @@
         <div class="container collaboration_container">
           <div class="row row-50 justify-content-center">
 			<div id="higher_dimension" class="col-xl-8 col-sm-12 col-12 wow fadeInLeft" data-wow-delay=".3s">
-			  <div id="blog_post" class="blog-wrap team-classic-wrap"></div>  
+			  <div class="blog-wrap team-classic-wrap">
+				<div class="team-classic-img"><img id="blogPageImage" alt="" width="370" height="198"/></div>
+				<div id="blog_post" class="blog-title-wrap">				
+				</div>
+			  </div>  
 			</div>
           </div>
         </div>
@@ -49,6 +53,7 @@
 		var locSearch = window.location.search.substring(1).split('&')[0];
 		if(locSearch){
 			$("#blog_post").load( "Blog/" + locSearch + ".html" );
+			$("#blogPageImage").attr("src", "images/Blog/" + locSearch + "_small.jpg");
 		}
 	});
 	</script>
