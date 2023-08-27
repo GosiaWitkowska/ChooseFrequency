@@ -8879,6 +8879,13 @@ margin-bottom:1em;
   /* background-repeat: no-repeat; */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFFFFFFF', GradientType=1);
 }
+.blog-quote:before {
+    top: 0;
+}
+.blog-quote:after {
+    bottom: 0;
+}
+
 .blog-quote auth {
 	font-size: 1rem;
 }
