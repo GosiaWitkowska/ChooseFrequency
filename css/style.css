@@ -8848,35 +8848,15 @@ html.rd-navbar-fixed-linked .page {
 time {
   text-transform: uppercase;
 }
-.swiper-carousel .post-tags-wrap a:hover {
-  color: #fff;
+
+.image-center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top:1em;
+margin-bottom:1em;
 }
 
-.swiper-carousel .post-tags-wrap span {
-  color: #fdd482;
-}
-.post .post-tags-wrap span,
-.post .post-tags {
-  font-size: 12px;
-  color: #aa6ecf;
-  text-transform: uppercase;
-  transition: .3s all ease-in-out;
-}
-.post-var-1:hover .post-tags-wrap span,
-.post-var-1:hover .post-tags {
-  color: #fdd482;
-}
-.post-var-1:hover .post-tags-wrap span:hover,
-.post-var-1:hover .post-tags:hover {
-  color: #fff;
-}
-.post-var-1 .post-tags-wrap + h5 {
-  margin-top: 22px;
-}
-.post .post-tags-wrap span,
-.post .post-tags {
-  font-size: 12px;
-  color: #aa6ecf;
-  text-transform: uppercase;
-  transition: .3s all ease-in-out;
+.blog-wrap h5 {
+	color: steelblue; 
 }
