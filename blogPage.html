@@ -35,7 +35,13 @@
 			<div id="higher_dimension" class="col-xl-8 col-sm-12 col-12 wow fadeInLeft" data-wow-delay=".3s">
 			  <div class="blog-wrap team-classic-wrap">
 				<div class="team-classic-img"><img id="blogPageImage" alt="" width="370" height="198"/></div>
-				<div id="blog_post" class="blog-title-wrap">				
+					<div class="blog-page-time">
+						<span class="post-panel">
+							<span class="mdi mdi-sm mdi-clock"></span>
+							<time id="blog-date"></time>
+						</span>
+					</div>				
+					<div id="blog_post" class="blog-title-wrap">				
 				</div>
 			  </div>  
 			</div>
@@ -50,10 +56,29 @@
     <script src="js/script.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
-		var locSearch = window.location.search.substring(1).split('&')[0];
-		if(locSearch){
-			$("#blog_post").load( "Blog/" + locSearch + ".html" );
-			$("#blogPageImage").attr("src", "images/Blog/" + locSearch + "_small.jpg");
+		const queryString = window.location.search;
+		const urlParams = new URLSearchParams(queryString);
+		const name = urlParams.get('name')
+		const id = urlParams.get('id')
+		if(name){
+			$("#blog_post").load( "Blog/" + name + ".html" );
+			$("#blogPageImage").attr("src", "images/Blog/" + name + "_small.jpg");
+		}
+		if (id) {
+			switch(id) {
+			  case "1":
+				document.getElementById('blog-date').innerHTML = "JANUARY 3, 2023"
+				break;
+			  case "2":
+				document.getElementById('blog-date').innerHTML = "FEBRUARY 2, 2023"
+				break;
+			  case "3":
+				document.getElementById('blog-date').innerHTML = "FEBRUARY 23, 2023"
+				
+				break;
+			  default:
+				// code block
+			}
 		}
 	});
 	</script>
