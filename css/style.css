@@ -8889,6 +8889,11 @@ margin-bottom:1em;
 .blog-quote auth {
 	font-size: 1rem;
 }
+.special-text {
+	color: #bda36c;
+	font-weight: bold;
+}
+
 .blog-page-time {
 	margin-top: 0 !important;
 	margin-left: 1em;
