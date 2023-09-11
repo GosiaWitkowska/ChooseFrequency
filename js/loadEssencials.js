@@ -1,5 +1,6 @@
 document.write('<link rel="stylesheet" type="text/css" href="../css/style.css" />');
 document.write('<script type="text/javascript" src="../js/jquery-1.11.1.min.js" ></script>');
+document.write('<script src="../js/core.min.js"></script>');
 
 var element = document.getElementById('mainFooter');
 element.classList.add("section");
