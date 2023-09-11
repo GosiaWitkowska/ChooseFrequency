@@ -1,5 +1,5 @@
-document.write('<link rel="stylesheet" type="text/css" href="css/style.css" />');
-document.write('<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>');
+document.write('<link rel="stylesheet" type="text/css" href="../css/style.css" />');
+document.write('<script type="text/javascript" src="../js/jquery-1.11.1.min.js" ></script>');
 
 var element = document.getElementById('mainFooter');
 element.classList.add("section");
@@ -92,15 +92,15 @@ element.innerHTML =
 +"		<div class='rd-navbar-main-element'>"
 +"		  <div class='rd-navbar-nav-wrap'>"
 +"			<ul class='rd-navbar-nav'>"
-+"			  <li id='menu-home' class='rd-nav-item'><a class='rd-nav-link' href='index.html'>Home</a>"
++"			  <li id='menu-home' class='rd-nav-item'><a class='rd-nav-link' href='../index.html'>Home</a>"
 +"			  </li>"
-+"			  <li id='menu-about' class='rd-nav-item'><a class='rd-nav-link' href='about.html'>About</a>"
++"			  <li id='menu-about' class='rd-nav-item'><a class='rd-nav-link' href='../about.html'>About</a>"
 +"			  </li>"
 +"			  <!--<li class='rd-nav-item'><a class='rd-nav-link' href='https://drive.google.com/file/d/1ZpGNZkO8bej1v293Ttz4eq50MPqXrPXr/view?usp=share_link' target='_blank'>Book</a></li>-->"
-+"			  <li id='menu-blog' class='rd-nav-item'><a class='rd-nav-link' href='blog.html' target='_blank'>Blog</a></li>"
++"			  <li id='menu-blog' class='rd-nav-item'><a class='rd-nav-link' href='../blog.html' target='_blank'>Blog</a></li>"
 +"			  <li class='rd-nav-item'><a class='rd-nav-link' href='https://www.youtube.com/@choosefrequency'>YouTube</a></li>"
-+"			  <li id='menu-contact' class='rd-nav-item'><a class='rd-nav-link' href='contacts.html'>Contact</a></li>"
-+"			  <li id='menu-collaboration' class='rd-nav-item'><a class='rd-nav-link' href='collaboration.html'>Collaboration</a></li>"
++"			  <li id='menu-contact' class='rd-nav-item'><a class='rd-nav-link' href='../contacts.html'>Contact</a></li>"
++"			  <li id='menu-collaboration' class='rd-nav-item'><a class='rd-nav-link' href='../collaboration.html'>Collaboration</a></li>"
 +"			</ul>"
 +"		  </div>"
 +"		</div>"
@@ -117,7 +117,7 @@ element.innerHTML = element.innerHTML +
 +"   <div class='row justify-content-center'>"
 +"	<div class='col-xl-8 text-center'>"
 +"	  <div class='rd-navbar-brand'>"
-+"		<!--Brand--><a href='index.html'><img class='brand-logo-dark' src='images/CF_LogoCircle.png' alt='' style='width:100%; height:auto; max-width:40px;'/></a>"
++"		<!--Brand--><a href='index.html'><img class='brand-logo-dark' src='../images/CF_LogoCircle.png' alt='' style='width:100%; height:auto; max-width:40px;'/></a>"
 +"	  </div>"			
 +"	  <h1 id='headerTitleMainText' class='font-weight-bold wow fadeInLeft'></h1>"
 +"    <p id='headerTitleSubText' class='intro-description wow fadeInRight'></p>"
@@ -126,6 +126,33 @@ element.innerHTML = element.innerHTML +
 +"</div>"
 +"</section>";
 
+var elementBlog = document.getElementById("spinner");
+if (elementBlog) elementBlog.innerHTML =	
+"    <div class='preloader'>"
++"      <div class='preloader-body'>"
++"        <div class='cssload-container'>"
++"          <div class='cssload-speeding-wheel'></div>"
++"        </div>"
++"        <p>Loading...</p>"
++"      </div>"
++"    </div>";
+
+var elementBlog = document.getElementById("blog");
+if (elementBlog) elementBlog.innerHTML = 
+"      <section class='section section-md'>"
++"        <div class='container collaboration_container'>"
++"          <div class='row row-50 justify-content-center'>"
++"			<div class='col-xl-8 col-sm-12 col-12 wow fadeInLeft' data-wow-delay='.3s'>"
++"			  <div class='blog-wrap team-classic-wrap'>"
++"				<div class='team-classic-img'><img id='blogPageImage' alt='' width='370' height='198'/></div>"
++"					<div id='blog_post' class='blog-title-wrap'>"				
++"				</div>"
++"			  </div>"
++"			</div>"
++"          </div>"
++"        </div>"
++"      </section>"
+
 
 
 if (element.classList.contains("header-blog") || element.classList.contains("header-blogPage")) {
@@ -133,7 +160,7 @@ if (element.classList.contains("header-blog") || element.classList.contains("hea
 	element.classList.add("active");
 	
 	var element = document.getElementById('headerTitleImage');
-	element.style = "background: url(images/breadcrumbs-post.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	element.style = "background: url(../images/breadcrumbs-post.jpg) no-repeat;background-size:cover;background-position: top center;" ;
 	
 	var element = document.getElementById('headerTitleMainText');
 	element.innerHTML = "Blog";
@@ -143,7 +170,7 @@ if (element.classList.contains("header-about")) {
 	element.classList.add("active");
 	
 	var element = document.getElementById('headerTitleImage');
-	element.style = "background: url(images/breadcrumbs-map.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	element.style = "background: url(../images/breadcrumbs-map.jpg) no-repeat;background-size:cover;background-position: top center;" ;
 	
 	var element = document.getElementById('headerTitleMainText');
 	element.innerHTML = "About Me";
@@ -153,7 +180,7 @@ if (element.classList.contains("header-contact")) {
 	element.classList.add("active");
 	
 	var element = document.getElementById('headerTitleImage');
-	element.style = "background: url(images/breadcrumbs-503.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	element.style = "background: url(../images/breadcrumbs-503.jpg) no-repeat;background-size:cover;background-position: top center;" ;
 	
 	var element = document.getElementById('headerTitleMainText');
 	element.innerHTML = "Contact Me";
@@ -168,7 +195,7 @@ if (element.classList.contains("header-collaboration")) {
 	var element = document.getElementById('menu-collaboration');
 	element.classList.add("active");
 	var element = document.getElementById('headerTitleImage');
-	element.style = "background:url(images/breadcrumbs-careers.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	element.style = "background:url(../images/breadcrumbs-careers.jpg) no-repeat;background-size:cover;background-position: top center;" ;
 	
 	var element = document.getElementById('headerTitleMainText');
 	element.innerHTML = "Collaboration";
@@ -183,7 +210,7 @@ if (element.classList.contains("header-home")) {
 if (element.classList.contains("header-terms")) {
 
 	var element = document.getElementById('headerTitleImage');
-	element.style = "background:url(images/breadcrumbs-about.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	element.style = "background:url(../images/breadcrumbs-about.jpg) no-repeat;background-size:cover;background-position: top center;" ;
 	
 	var element = document.getElementById('headerTitleMainText');
 	element.innerHTML = "Terms and Conditions";
@@ -194,7 +221,7 @@ if (element.classList.contains("header-terms")) {
 if (element.classList.contains("header-thankyou")) {
 
 	var element = document.getElementById('headerTitleImage');
-	element.style = "background:url(images/breadcrumbs-about.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	element.style = "background:url(../images/breadcrumbs-about.jpg) no-repeat;background-size:cover;background-position: top center;" ;
 	
 	var element = document.getElementById('headerTitleMainText');
 	element.innerHTML = "Thank you for sending your question.";
@@ -205,7 +232,7 @@ if (element.classList.contains("header-thankyou")) {
 if (element.classList.contains("header-thankyouforbooking")) {
 
 	var element = document.getElementById('headerTitleImage');
-	element.style = "background:url(images/breadcrumbs-about.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	element.style = "background:url(../images/breadcrumbs-about.jpg) no-repeat;background-size:cover;background-position: top center;" ;
 	
 	var element = document.getElementById('headerTitleMainText');
 	element.innerHTML = "Thank you<h1> <label name='invitee_full_name'></label> for booking your session with Choose Frequency";
