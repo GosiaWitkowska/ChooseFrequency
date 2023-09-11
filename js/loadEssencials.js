@@ -3,6 +3,7 @@ document.write('<script type="text/javascript" src="../js/jquery-1.11.1.min.js" 
 document.write('<script src="../js/core.min.js"></script>');
 
 var element = document.getElementById('mainFooter');
+if (element) {
 element.classList.add("section");
 element.classList.add("footer-classic");
 element.classList.add("section-sm");
@@ -40,9 +41,10 @@ element.innerHTML =
 +"            </ul>"
 +"          </div>"
 +"        </div>";	
-
+}
 
 var element = document.getElementById('mainHeader');
+if (element) {
 element.classList.add("section");
 element.classList.add("page-header");
 element.innerHTML =
@@ -126,6 +128,7 @@ element.innerHTML = element.innerHTML +
 +"  </div>"
 +"</div>"
 +"</section>";
+}
 
 var elementBlog = document.getElementById("spinner");
 if (elementBlog) elementBlog.innerHTML =	
@@ -155,7 +158,7 @@ if (elementBlog) elementBlog.innerHTML =
 +"      </section>"
 
 
-
+if (element) {
 if (element.classList.contains("header-blog") || element.classList.contains("header-blogPage")) {
 	var element = document.getElementById('menu-blog');
 	element.classList.add("active");
@@ -241,4 +244,4 @@ if (element.classList.contains("header-thankyouforbooking")) {
 	var element = document.getElementById('headerTitleSubText');
 	element.innerHTML = "A calendar invitation has been sent to your email address";
 }
-
+}
