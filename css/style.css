@@ -8898,3 +8898,7 @@ margin-bottom:1em;
 	margin-top: 0 !important;
 	margin-left: 1em;
 }
+
+#about p a {
+	color: blue;
+}

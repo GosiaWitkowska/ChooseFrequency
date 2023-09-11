@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta property="og:image" content="images/Blog/higher_dimension_small.jpg">
     <link rel="icon" href="images/CF_LogoCircle.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="fonts/fontMonterrat.css">
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -15,7 +16,8 @@
   </head>
   <body>
   
-    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/">
+	<img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <div class="preloader">
       <div class="preloader-body">
         <div class="cssload-container">
@@ -63,6 +65,7 @@
 		if(name){
 			$("#blog_post").load( "Blog/" + name + ".html" );
 			$("#blogPageImage").attr("src", "images/Blog/" + name + "_small.jpg");
+			document.querySelector('meta[property="og:image"]').setAttribute("content", "images/Blog/" + name + "_small.jpg");
 		}
 		if (id) {
 			switch(id) {
