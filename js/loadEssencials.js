@@ -44,6 +44,8 @@ element.innerHTML =
 
 var element = document.getElementById('mainHeader');
 if (element) {
+	var prefix= "";
+	if(element.classList.contains('header-blogPage')) prefix= "../";
 element.classList.add("section");
 element.classList.add("page-header");
 element.innerHTML =
@@ -94,15 +96,15 @@ element.innerHTML =
 +"		<div class='rd-navbar-main-element'>"
 +"		  <div class='rd-navbar-nav-wrap'>"
 +"			<ul class='rd-navbar-nav'>"
-+"			  <li id='menu-home' class='rd-nav-item'><a class='rd-nav-link' href='../index.html'>Home</a>"
++"			  <li id='menu-home' class='rd-nav-item'><a class='rd-nav-link' href='"+prefix+"index.html'>Home</a>"
 +"			  </li>"
-+"			  <li id='menu-about' class='rd-nav-item'><a class='rd-nav-link' href='../about.html'>About</a>"
++"			  <li id='menu-about' class='rd-nav-item'><a class='rd-nav-link' href='"+prefix+"about.html'>About</a>"
 +"			  </li>"
 +"			  <!--<li class='rd-nav-item'><a class='rd-nav-link' href='https://drive.google.com/file/d/1ZpGNZkO8bej1v293Ttz4eq50MPqXrPXr/view?usp=share_link' target='_blank'>Book</a></li>-->"
-+"			  <li id='menu-blog' class='rd-nav-item'><a class='rd-nav-link' href='../blog.html' target='_blank'>Blog</a></li>"
++"			  <li id='menu-blog' class='rd-nav-item'><a class='rd-nav-link' href='"+prefix+"blog.html' target='_blank'>Blog</a></li>"
 +"			  <li class='rd-nav-item'><a class='rd-nav-link' href='https://www.youtube.com/@choosefrequency'>YouTube</a></li>"
-+"			  <li id='menu-contact' class='rd-nav-item'><a class='rd-nav-link' href='../contacts.html'>Contact</a></li>"
-+"			  <li id='menu-collaboration' class='rd-nav-item'><a class='rd-nav-link' href='../collaboration.html'>Collaboration</a></li>"
++"			  <li id='menu-contact' class='rd-nav-item'><a class='rd-nav-link' href='"+prefix+"contacts.html'>Contact</a></li>"
++"			  <li id='menu-collaboration' class='rd-nav-item'><a class='rd-nav-link' href='"+prefix+"collaboration.html'>Collaboration</a></li>"
 +"			</ul>"
 +"		  </div>"
 +"		</div>"
@@ -163,7 +165,7 @@ if (element.classList.contains("header-blog") || element.classList.contains("hea
 	element.classList.add("active");
 	
 	var element = document.getElementById('headerTitleImage');
-	element.style = "background: url(../images/breadcrumbs-post.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	element.style = "background: url("+prefix+"images/breadcrumbs-post.jpg) no-repeat;background-size:cover;background-position: top center;" ;
 	
 	var element = document.getElementById('headerTitleMainText');
 	element.innerHTML = "Blog";
@@ -173,7 +175,7 @@ if (element.classList.contains("header-about")) {
 	element.classList.add("active");
 	
 	var element = document.getElementById('headerTitleImage');
-	element.style = "background: url(../images/breadcrumbs-map.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	element.style = "background: url("+prefix+"images/breadcrumbs-map.jpg) no-repeat;background-size:cover;background-position: top center;" ;
 	
 	var element = document.getElementById('headerTitleMainText');
 	element.innerHTML = "About Me";
@@ -183,7 +185,7 @@ if (element.classList.contains("header-contact")) {
 	element.classList.add("active");
 	
 	var element = document.getElementById('headerTitleImage');
-	element.style = "background: url(../images/breadcrumbs-503.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	element.style = "background: url("+prefix+"images/breadcrumbs-503.jpg) no-repeat;background-size:cover;background-position: top center;" ;
 	
 	var element = document.getElementById('headerTitleMainText');
 	element.innerHTML = "Contact Me";
@@ -198,7 +200,7 @@ if (element.classList.contains("header-collaboration")) {
 	var element = document.getElementById('menu-collaboration');
 	element.classList.add("active");
 	var element = document.getElementById('headerTitleImage');
-	element.style = "background:url(../images/breadcrumbs-careers.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	element.style = "background:url("+prefix+"images/breadcrumbs-careers.jpg) no-repeat;background-size:cover;background-position: top center;" ;
 	
 	var element = document.getElementById('headerTitleMainText');
 	element.innerHTML = "Collaboration";
@@ -213,7 +215,7 @@ if (element.classList.contains("header-home")) {
 if (element.classList.contains("header-terms")) {
 
 	var element = document.getElementById('headerTitleImage');
-	element.style = "background:url(../images/breadcrumbs-about.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	element.style = "background:url("+prefix+"images/breadcrumbs-about.jpg) no-repeat;background-size:cover;background-position: top center;" ;
 	
 	var element = document.getElementById('headerTitleMainText');
 	element.innerHTML = "Terms and Conditions";
@@ -224,7 +226,7 @@ if (element.classList.contains("header-terms")) {
 if (element.classList.contains("header-thankyou")) {
 
 	var element = document.getElementById('headerTitleImage');
-	element.style = "background:url(../images/breadcrumbs-about.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	element.style = "background:url("+prefix+"images/breadcrumbs-about.jpg) no-repeat;background-size:cover;background-position: top center;" ;
 	
 	var element = document.getElementById('headerTitleMainText');
 	element.innerHTML = "Thank you for sending your question.";
@@ -235,7 +237,7 @@ if (element.classList.contains("header-thankyou")) {
 if (element.classList.contains("header-thankyouforbooking")) {
 
 	var element = document.getElementById('headerTitleImage');
-	element.style = "background:url(../images/breadcrumbs-about.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	element.style = "background:url("+prefix+"images/breadcrumbs-about.jpg) no-repeat;background-size:cover;background-position: top center;" ;
 	
 	var element = document.getElementById('headerTitleMainText');
 	element.innerHTML = "Thank you<h1> <label name='invitee_full_name'></label> for booking your session with Choose Frequency";
