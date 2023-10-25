@@ -8902,3 +8902,9 @@ margin-bottom:1em;
 #about p a {
 	color: blue;
 }
+.blog_more {
+	text-align: right;
+	display: block;
+	color: darkblue;
+	padding-right: 30px;
+}
