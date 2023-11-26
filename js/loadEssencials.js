@@ -103,6 +103,7 @@ element.innerHTML =
 +"			  <li class='rd-nav-item'><a class='rd-nav-link' href='https://www.youtube.com/@choosefrequency'>YouTube</a></li>"
 +"			  <li id='menu-contact' class='rd-nav-item'><a class='rd-nav-link' href='contacts.html'>Contact</a></li>"
 +"			  <li id='menu-collaboration' class='rd-nav-item'><a class='rd-nav-link' href='collaboration.html'>Collaboration</a></li>"
++"			  <li id='menu-collaboration' class='rd-nav-item'><a class='rd-nav-link' href='sessions.html'>Sessions</a></li>"
 +"			</ul>"
 +"		  </div>"
 +"		</div>"
@@ -158,6 +159,16 @@ if (elementBlog) elementBlog.innerHTML =
 
 
 if (element) {
+if (element.classList.contains("header-sessions")) {
+	var element = document.getElementById('menu-about');
+	element.classList.add("active");
+	
+	var element = document.getElementById('headerTitleImage');
+	element.style = "background: url(images/breadcrumbs-map.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	
+	var element = document.getElementById('headerTitleMainText');
+	element.innerHTML = "Sessions";
+}
 if (element.classList.contains("header-blog") || element.classList.contains("header-blogPage")) {
 	var element = document.getElementById('menu-blog');
 	element.classList.add("active");
