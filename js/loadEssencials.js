@@ -168,6 +168,9 @@ if (element.classList.contains("header-sessions")) {
 	
 	var element = document.getElementById('headerTitleMainText');
 	element.innerHTML = "Sessions";
+
+	var element = document.getElementById('headerTitleSubText');
+	element.innerHTML = "www.meetup.com/choosefrequency";
 }
 if (element.classList.contains("header-blog") || element.classList.contains("header-blogPage")) {
 	var element = document.getElementById('menu-blog');
