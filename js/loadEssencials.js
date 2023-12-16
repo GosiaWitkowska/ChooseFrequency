@@ -170,7 +170,7 @@ if (element.classList.contains("header-sessions")) {
 	element.innerHTML = "Sessions";
 
 	var element = document.getElementById('headerTitleSubText');
-	element.innerHTML = "www.meetup.com/choosefrequency";
+	element.innerHTML = "<a href='https://www.meetup.com/choosefrequency/'>www.meetup.com/choosefrequency</a>";
 }
 if (element.classList.contains("header-blog") || element.classList.contains("header-blogPage")) {
 	var element = document.getElementById('menu-blog');
