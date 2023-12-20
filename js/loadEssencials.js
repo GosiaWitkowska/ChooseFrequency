@@ -100,10 +100,10 @@ element.innerHTML =
 +"			  </li>"
 +"			  <li id='menu-blog' class='rd-nav-item'><a class='rd-nav-link' href='blog.html' target='_blank'>Blog</a></li>"
 +"			  <li class='rd-nav-item'><a class='rd-nav-link' href='https://www.youtube.com/@choosefrequency'>YouTube</a></li>"
-+"			  <!--<li class='rd-nav-item'><a class='rd-nav-link' href='https://drive.google.com/file/d/19gnN3L1LNlZovqq5IbyccZdDMABPhv13/view?usp=sharing' target='_blank'>Book</a></li>-->" 
++"			  <li id='menu-books' class='rd-nav-item'><a class='rd-nav-link' href='books.html' target='_blank'>Book</a></li>" 
 +"			  <li id='menu-contact' class='rd-nav-item'><a class='rd-nav-link' href='contacts.html'>Contact</a></li>"
 +"			  <li id='menu-collaboration' class='rd-nav-item'><a class='rd-nav-link' href='collaboration.html'>Collaboration</a></li>"
-+"			  <li id='menu-collaboration' class='rd-nav-item'><a class='rd-nav-link' href='sessions.html'>Sessions</a></li>"
++"			  <li id='menu-sessions' class='rd-nav-item'><a class='rd-nav-link' href='sessions.html'>Sessions</a></li>"
 +"			</ul>"
 +"		  </div>"
 +"		</div>"
@@ -123,6 +123,7 @@ element.innerHTML = element.innerHTML +
 +"		<!--Brand--><a href='index.html'><img class='brand-logo-dark' src='../images/CF_LogoCircle.png' alt='' style='width:100%; height:auto; max-width:40px;'/></a>"
 +"	  </div>"			
 +"	  <h1 id='headerTitleMainText' class='font-weight-bold wow fadeInLeft'></h1>"
++"	  <h3 id='headerTitleSmallerMainText' class='font-weight-bold wow fadeInLeft'></h3>"
 +"    <p id='headerTitleSubText' class='intro-description wow fadeInRight'></p>"
 +"	</div>"
 +"  </div>"
@@ -159,8 +160,19 @@ if (elementBlog) elementBlog.innerHTML =
 
 
 if (element) {
+if (element.classList.contains("header-books")) {
+	var element = document.getElementById('menu-books');
+	element.classList.add("active");
+	
+	var element = document.getElementById('headerTitleImage');
+	element.style = "background: url(images/breadcrumbs-map.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	
+
+	var element = document.getElementById('headerTitleSmallerMainText');
+	element.innerHTML = "Please register with your email address to receive a link to the e-book";
+}	
 if (element.classList.contains("header-sessions")) {
-	var element = document.getElementById('menu-about');
+	var element = document.getElementById('menu-sessions');
 	element.classList.add("active");
 	
 	var element = document.getElementById('headerTitleImage');

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Book</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="../images/CF_LogoCircle.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../fonts/fontMonterrat.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+	<style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	
+	  <!-- BootstrapValidator JS -->
+	  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
+	 
+	 <script src="https://www.paypal.com/sdk/js?client-id=AcNvlQlQ58A_8dZ-OIUNhg4WnTiNdW3gHDwKYjBPItA5KFvsnztF4JK1EEIz9_aHWQzygVQJcq0aNNX0&currency=GBP" data-sdk-integration-source="button-factory"></script>	  
+  </head>
+  <body id="bookings">
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <div class="cssload-speeding-wheel"></div>
+        </div>
+        <p>Loading...</p>
+      </div>
+    </div>
+	<div class="page">
+      
+	<header id="mainHeader" class="header-books"></header>
+
+      <!--Mailform-->
+      <section class="section section-md">
+        <div class="container">
+          <!--RD Mailform-->
+          <div class="row justify-content-center">
+            <div class="col-xl-6 col-md-8 col-12">
+
+				<div class="row">
+					<div class="col-lg-6 book_img">
+						<div class="team-classic-wrap">
+							<div class="team-classic-img"><img src="images/books/book01.jpg" alt=""/></div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+					  <form id="book-reg-form" onsubmit="book_reg()" method="POST"> 
+						<div class="form-wrap">
+						  <label class="form-label" for="contact-name">Name<span class="req-symbol">*</span></label>
+						  <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
+						</div>
+						<div class="form-wrap">
+						  <label class="form-label" for="contact-email">E-Mail<span class="req-symbol">*</span></label>
+						  <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Required @Email">
+						</div>
+						<div class="form-button group-sm text-center text-lg-left">
+							<button class="button button-primary" type="submit">Submit</button>
+						</div>
+					  </form>
+  		    	    	<div id="success-box" style="display: none;"><h3>The link has been sent.</h3></div>
+					</div>
+				</div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+	  <footer id="mainFooter"></footer>
+      
+    </div>
+				
+                <form id="book-reg-form" method="post" role="form">
+					<div class="form-group">
+					The pre-recorded reading will be provided through a private youtube link, which expires after 1 month.</br>
+					</div>
+					<input type="hidden" id="email" name="email">
+					
+                    <div class="messages"></div>
+
+                    <div class="controls">
+					    <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="form_name">Name</label>
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name" />
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+							<div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="form_email">Email *</label>
+                                    <input id="form_email" type="email2" name="email2" class="form-control" placeholder="email" required="required"
+										data-error="Email is required." />
+                                </div>
+                            </div>
+                        </div>
+					
+						<div class="form-group" id="paypal-conintener">
+							<button class="btn btn-success btn-send" id="btn-paypal" class="btn btn-primary mb-2" disabled>PayPal</button>
+						</div>
+						<div class="form-group" id="paypal-conintener">
+						<div id="smart-button-container">
+							<div style="text-align: center;">
+							<div id="paypal-button-container"></div>
+						  </div>
+						</div>
+                    </div>
+                </form>
+				<div id="success-box" style="display: none;"><h3>The link has been sent.</h3></div>
+            </div>	
+	</div>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script src='https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js'></script>
+	<script src="book_reg.js"></script>
+	<script src="js/loadEssencials.js"></script>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+
+
+</html>

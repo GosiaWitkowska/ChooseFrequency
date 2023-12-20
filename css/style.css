@@ -365,7 +365,6 @@ a, a:focus, a:active{
 	color: #aab2b9;
 }
 a:hover {
-	color: rgb(85, 26, 139);
 	font-weight: bold;
 }
 
@@ -8910,4 +8909,10 @@ margin-bottom:1em;
 	display: block;
 	color: darkblue;
 	padding-right: 30px;
+}
+@media (max-width: 725px) 
+{
+	.book_img {
+		display: none;
+	}
 }
