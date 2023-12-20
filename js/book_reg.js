@@ -32,7 +32,7 @@
 			//});
 			
 			// Use Ajax to submit form data
-			var url = 'https://script.google.com/macros/s/AKfycbwhHONiu2o2kYHM5v3PJoj_iDAR-bhnEe4FWWFFJO-WlwIqG0rTZPLArMsVojbMYnpmUQ/exec';			
+			var url = 'https://script.google.com/macros/s/AKfycbxvDZPHIawT8tPRqtLO6XgpTQrj61VwGnvf34Lwx4NMhsDihf9hLjtg6g_t1ZSp0st98w/exec';			
 			var jqxhr = $.post(url, $form.serialize(), function(data) {
 				console.log("Success! Data: " + data.statusText);		
 			}).done(function (){
