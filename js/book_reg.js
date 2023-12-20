@@ -1,6 +1,4 @@
-$(function () {
 
-	
 	function isFormAvailable(){
 		var email = document.getElementById("form_email").value;
 		return (email != null && email != "");
@@ -9,8 +7,8 @@ $(function () {
     function book_reg() {
 
 			var $form = $('#book-reg-form');
-			var email = $("#form_email").val();
-			var name = $("#form_name").val();
+			var email = $("#contact-email").val();
+			var name = $("#contact-name").val();
 			/*
 			Email.send({
 				SecureToken : "dcb07cb7-1ff5-4a55-ba12-70afa765ab5e",
@@ -50,4 +48,3 @@ $(function () {
 			});
 
           }
-});
