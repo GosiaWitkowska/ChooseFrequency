@@ -100,7 +100,7 @@ element.innerHTML =
 +"			  </li>"
 +"			  <li id='menu-blog' class='rd-nav-item'><a class='rd-nav-link' href='blog.html' target='_blank'>Blog</a></li>"
 +"			  <li class='rd-nav-item'><a class='rd-nav-link' href='https://www.youtube.com/@choosefrequency'>YouTube</a></li>"
-+"			  <!--<li id='menu-books' class='rd-nav-item'><a class='rd-nav-link' href='books.html' target='_blank'>Book</a></li>-->" 
++"			  <li id='menu-books' class='rd-nav-item'><a class='rd-nav-link' href='books.html' target='_blank'>Book</a></li>" 
 +"			  <li id='menu-contact' class='rd-nav-item'><a class='rd-nav-link' href='contacts.html'>Contact</a></li>"
 +"			  <li id='menu-collaboration' class='rd-nav-item'><a class='rd-nav-link' href='collaboration.html'>Collaboration</a></li>"
 +"			  <li id='menu-sessions' class='rd-nav-item'><a class='rd-nav-link' href='sessions.html'>Sessions</a></li>"
@@ -169,7 +169,7 @@ if (element.classList.contains("header-books")) {
 	
 
 	var element = document.getElementById('headerTitleSmallerMainText');
-	element.innerHTML = "Please register with your email address to receive a link to the e-book";
+	element.innerHTML = "Please register with your email address to receive this e-book link";
 }	
 if (element.classList.contains("header-sessions")) {
 	var element = document.getElementById('menu-sessions');
