@@ -1,8 +1,26 @@
 
 	function isFormAvailable(){
-		var email = document.getElementById("form_email").value;
-		return (email != null && email != "");
+		var email = document.getElementById("contact-email").value;
+		var name = document.getElementById("contact-name").value;
+		return (email != null && email != "" && name != null && name != "");
 	}
+
+	// Use Ajax to submit form data			
+	const form = document.forms['book-reg-form']
+	form.addEventListener('submit', e => {
+		
+		var url = 'https://script.google.com/macros/s/AKfycbzbfy74BcdigtTIiuIts-FtAifXqhxIx3Iu49204trekJK6DgXUAEGJpuLvQp4RA-72uw/exec';		
+		e.preventDefault()
+		fetch(url, { method: 'POST', body: new FormData(form)})
+		.then(response => {
+			document.getElementById("book-reg-form").style.display="none";
+			document.getElementById("success-box").style.display="block";
+		})
+		//.then(() => { window.location.reload(); })
+		.catch(error => console.error('Error!', error.message))
+	})
+
+
 
     function book_reg() {
 
@@ -30,16 +48,6 @@
 				//Subject : `Personal Reading for ${details.payer.email_address}`,
 				//Body : `Personal reading ordered for ${details.payer.email_address}`
 			//});
-			
-			// Use Ajax to submit form data			
-			const form = document.forms['book-reg-form']
-			
-			var url = 'https://script.google.com/macros/s/AKfycbzbfy74BcdigtTIiuIts-FtAifXqhxIx3Iu49204trekJK6DgXUAEGJpuLvQp4RA-72uw/exec';		
-			e.preventDefault()
-			fetch(url, { method: 'POST', body: new FormData(form)})
-			.then(response => alert("Thank you! your form is submitted successfully." ))
-			.then(() => { window.location.reload(); })
-			.catch(error => console.error('Error!', error.message))
 
 			/*
 			var jqxhr = $.post(url, new FormData(form), function(data) {
