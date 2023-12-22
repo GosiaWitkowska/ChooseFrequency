@@ -4,17 +4,58 @@
 		var name = document.getElementById("contact-name").value;
 		return (email != null && email != "" && name != null && name != "");
 	}
+	
+    function send_email(name, email) {
 
+			Email.send({
+				Host : "smtp.elasticemail.com",
+				Username : "choosefrequency@gmail.com",
+				Password : "869976CC3F8BF7E2F23FBEF9CAB889D8C996",
+				To : "gosias13@gmail.com",
+				From : "choosefrequency@gmail.com",
+				Subject : "Create your synchronicities",
+				Body : `<html><h2>Dear ${name},</h2>
+						<strong>Thank you for sharing the passion to create synchronicities and change our faith and the World.</br> 
+						Please find the link to the book below: </br>
+						https://bit.ly/3RSVe8x </br>
+						</br>
+						In 2023, I am launching my new online course about creating synchronicities with 10h of theory, exercises and examples.  
+						I will send you an email when it becomes available.
+						</strong><p>						
+						<em> Best Wishes,</em></p><p><em> Malgorzata Witkowska - Choose Frequency</em></p><p><strong> www.choosefrequency.com</strong></p></html>`,
+				Attachments : [
+					{
+						name : "CF_LogoCircle.jpg",
+						path : "https://www.choosefrequency.com/images/CF_LogoCircle.png"
+					}]
+			}).then(
+			  message => alert(message)
+			);
+	}
 	// Use Ajax to submit form data			
 	const form = document.forms['book-reg-form']
 	form.addEventListener('submit', e => {
 		
-		var url = 'https://script.google.com/macros/s/AKfycbzbfy74BcdigtTIiuIts-FtAifXqhxIx3Iu49204trekJK6DgXUAEGJpuLvQp4RA-72uw/exec';		
+		if (!isFormAvailable) {
+			alert("Please provide anme and email address. Thank you." );
+			return;
+		}
+		
+		document.getElementById("book-reg-form").style.display="none";
+		document.getElementById("submit").disabled = true;
+		document.getElementById("sending-spinner").style.display="block";
+		
+		var name = document.getElementById("contact-name");
+		var email = document.getElementById("contact-email");
+		
+		
+		var url = 'https://script.google.com/macros/s/AKfycbxvuSQCFDR-i6aZqJIU2ikmA5i_XLwwOlHGlY9in9IdZdr1xbGRVij5bkW0BM5NGkGwDg/exec';		
 		e.preventDefault()
 		fetch(url, { method: 'POST', body: new FormData(form)})
 		.then(response => {
-			document.getElementById("book-reg-form").style.display="none";
+			document.getElementById("sending-spinner").style.display="none";
 			document.getElementById("success-box").style.display="block";
+			 send_email(name, email);
 		})
 		//.then(() => { window.location.reload(); })
 		.catch(error => console.error('Error!', error.message))
@@ -22,46 +63,5 @@
 
 
 
-    function book_reg() {
 
-			//var form = document.forms['book-reg-form'];
-			var email = $("#contact-email").val();
-			var name = $("#contact-name").val();
-			/*
-			Email.send({
-				SecureToken : "dcb07cb7-1ff5-4a55-ba12-70afa765ab5e",
-				To : email,
-				From : "choosefrequency@gmail.com",
-				Subject : "Create your synchronicities.",
-				Body : `<html><h2>Dear ${name},</h2><strong>Thank you for ordering your personal reading.</br> Please allow between 2 and 7 days for the reading to be send to you.</strong><p><em> Best Wishes,</em></p><p><em> Let It Go Tarot.</em></p><p><strong> www.letitgotarot.com</strong></p></html>`,
-				Attachments : [
-					{
-						name : "CF_LogoCircle.jpg",
-						path : "https://www.choosefrequency.com/images/CF_LogoCircle.png"
-					}]
-			});
-			*/
-			//Email.send({
-//				SecureToken : "dcb07cb7-1ff5-4a55-ba12-70afa765ab5e",
-				//To : "letitgotarot@gmail.com",
-				//From : "letitgotarot@gmail.com",
-				//Subject : `Personal Reading for ${details.payer.email_address}`,
-				//Body : `Personal reading ordered for ${details.payer.email_address}`
-			//});
-
-			/*
-			var jqxhr = $.post(url, new FormData(form), function(data) {
-				console.log("Success! Data: " + data.statusText);		
-			}).done(function (){
-				document.getElementById("book-reg-form").style.display="none";
-				document.getElementById("success-box").style.display="block";
-			}).fail(function(data) {
-				console.warn("Error! Data: " + data.statusText);
-				// HACK - check if browser is Safari - and redirect even if fail b/c we know the form submits.
-				if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
-					//alert("Browser is Safari -- we get an error, but the form still submits -- continue.");
-					$(location).attr('href',redirectUrl);   
-				}
-			});
-*/
-          }
+  
