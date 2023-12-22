@@ -48,8 +48,8 @@
 		document.getElementById("submit").disabled = true;
 		document.getElementById("sending-spinner").style.display="block";
 		
-		var name = document.getElementById("contact-name");
-		var email = document.getElementById("contact-email");
+		var name = document.getElementById("contact-name").value;
+		var email = document.getElementById("contact-email").value;
 		
 		
 		var url = 'https://script.google.com/macros/s/AKfycbxvuSQCFDR-i6aZqJIU2ikmA5i_XLwwOlHGlY9in9IdZdr1xbGRVij5bkW0BM5NGkGwDg/exec';		
