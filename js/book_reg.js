@@ -6,6 +6,17 @@
 	}
 	
     function send_email(name, email) {
+		
+			var msgBody = "<html><h2>Dear" + name + "</h2>" +
+						"<strong>Thank you for sharing the passion to create synchronicities and change our faith and the World.</br>" +
+						"Please find the link to the book below: </br>" +
+						"https://bit.ly/3RSVe8x </br>" +
+						"</br>" +
+						"In 2023, I am launching my new online course about creating synchronicities with 10h of theory, exercises and examples." +
+						"I will send you an email when it becomes available." +
+						"</strong><p>"	 +
+						"<em> Best Wishes,</em></p><p><em> Malgorzata Witkowska - Choose Frequency</em></p><p><strong> www.choosefrequency.com</strong></p></html>" +
+						"<img href="https://www.choosefrequency.com/images/CF_LogoCircle.png"></img>";
 
 			Email.send({
 				Host : "smtp.elasticemail.com",
@@ -14,20 +25,7 @@
 				To : email,
 				From : "info@choosefrequency.com",
 				Subject : "Create your synchronicities",
-				Body : "",
-				BodyHtml : `<html><h2>Dear ${name},</h2>
-						<strong>Thank you for sharing the passion to create synchronicities and change our faith and the World.</br> 
-						Please find the link to the book below: </br>
-						https://bit.ly/3RSVe8x </br>
-						</br>
-						In 2023, I am launching my new online course about creating synchronicities with 10h of theory, exercises and examples.  
-						I will send you an email when it becomes available.
-						</strong><p>						
-						<em> Best Wishes,</em></p><p><em> Malgorzata Witkowska - Choose Frequency</em></p><p><strong> www.choosefrequency.com</strong></p></html>
-						<img href="https://www.choosefrequency.com/images/CF_LogoCircle.png"></img>
-						
-						`,
-						
+				Body : msgBody,						
 				Attachments : [
 					{
 						name : "CF_LogoCircle.jpg",
