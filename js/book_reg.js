@@ -6,7 +6,7 @@
 
     function book_reg() {
 
-			var $form = $('#book-reg-form');
+			//var form = document.forms['book-reg-form'];
 			var email = $("#contact-email").val();
 			var name = $("#contact-name").val();
 			/*
@@ -31,9 +31,18 @@
 				//Body : `Personal reading ordered for ${details.payer.email_address}`
 			//});
 			
-			// Use Ajax to submit form data
-			var url = 'https://script.google.com/macros/s/AKfycbxvDZPHIawT8tPRqtLO6XgpTQrj61VwGnvf34Lwx4NMhsDihf9hLjtg6g_t1ZSp0st98w/exec';			
-			var jqxhr = $.post(url, $form.serialize(), function(data) {
+			// Use Ajax to submit form data			
+			const form = document.forms['book-reg-form']
+			
+			var url = 'https://script.google.com/macros/s/AKfycbzbfy74BcdigtTIiuIts-FtAifXqhxIx3Iu49204trekJK6DgXUAEGJpuLvQp4RA-72uw/exec';		
+			e.preventDefault()
+			fetch(url, { method: 'POST', body: new FormData(form)})
+			.then(response => alert("Thank you! your form is submitted successfully." ))
+			.then(() => { window.location.reload(); })
+			.catch(error => console.error('Error!', error.message))
+
+			/*
+			var jqxhr = $.post(url, new FormData(form), function(data) {
 				console.log("Success! Data: " + data.statusText);		
 			}).done(function (){
 				document.getElementById("book-reg-form").style.display="none";
@@ -46,5 +55,5 @@
 					$(location).attr('href',redirectUrl);   
 				}
 			});
-
+*/
           }

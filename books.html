@@ -19,8 +19,10 @@
 	
 	  <!-- BootstrapValidator JS -->
 	  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
-	 
-	 <script src="https://www.paypal.com/sdk/js?client-id=AcNvlQlQ58A_8dZ-OIUNhg4WnTiNdW3gHDwKYjBPItA5KFvsnztF4JK1EEIz9_aHWQzygVQJcq0aNNX0&currency=GBP" data-sdk-integration-source="button-factory"></script>	  
+ 	 <script src="https://www.paypal.com/sdk/js?client-id=AcNvlQlQ58A_8dZ-OIUNhg4WnTiNdW3gHDwKYjBPItA5KFvsnztF4JK1EEIz9_aHWQzygVQJcq0aNNX0&currency=GBP" data-sdk-integration-source="button-factory"></script>	  
+
+	<meta property="og:image" content="https://www.choosefrequency.com/images/books/book01_Christmas.jpg">
+	<meta property="og:title" content='"Create your synchronicities." (Free Gift)'>
   </head>
   <body id="bookings">
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
@@ -50,7 +52,7 @@
 						</div>
 					</div>
 					<div class="col-lg-6">
-					  <form id="book-reg-form" onsubmit="book_reg()" method="POST"> 
+					 <!-- <form name="book-reg-form" onsubmit="book_reg()" method="POST"> 
 						<div class="form-wrap">
 						  <label class="form-label" for="contact-name">Name<span class="req-symbol">*</span></label>
 						  <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
@@ -62,7 +64,16 @@
 						<div class="form-button group-sm text-center text-lg-left">
 							<button class="button button-primary" type="submit">Submit</button>
 						</div>
-					  </form>
+					  </form>-->
+					  
+					  		<form method="post" action="" onsubmit="book_reg()" name="contact-form">
+			<h4>Contact Us</h4>
+			<input type="text" name="contact-name" placeholder="Name">
+			<input type="email" name="contact-email" placeholder="Email">
+			<input type="submit" value="Submit" id="submit">
+		</form>
+					  
+					  
   		    	    	<div id="success-box" style="display: none;"><h3>The link has been sent.</h3></div>
 					</div>
 				</div>
