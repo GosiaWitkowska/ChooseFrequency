@@ -169,7 +169,7 @@ if (element.classList.contains("header-books")) {
 	
 
 	var element = document.getElementById('headerTitleSmallerMainText');
-	element.innerHTML = "Please register with your email address to receive this e-book link";
+	element.innerHTML = "Please register with your email address to receive a link to this e-book";
 }	
 if (element.classList.contains("header-sessions")) {
 	var element = document.getElementById('menu-sessions');
