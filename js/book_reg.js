@@ -31,9 +31,7 @@
 						name : "CF_LogoCircle.jpg",
 						path : "https://www.choosefrequency.com/images/books/book01_Christmas.jpg"
 					}]
-			}).then(
-			  message => alert(message)
-			);
+			});
 	}
 	// Use Ajax to submit form data			
 	const form = document.forms['book-reg-form']
