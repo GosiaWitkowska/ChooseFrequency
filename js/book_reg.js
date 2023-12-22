@@ -14,6 +14,7 @@
 				To : email,
 				From : "info@choosefrequency.com",
 				Subject : "Create your synchronicities",
+				Body : "",
 				BodyHtml : `<html><h2>Dear ${name},</h2>
 						<strong>Thank you for sharing the passion to create synchronicities and change our faith and the World.</br> 
 						Please find the link to the book below: </br>
