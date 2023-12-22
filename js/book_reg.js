@@ -8,13 +8,14 @@
     function send_email(name, email) {
 		
 			var msgBody = '<html><h2>Dear ' + name + ',</h2>' +
-						'<p>Thank you for sharing the passion to create synchronicities and change our faith and the World.</p>' +
+						'<p>Thank you for sharing the passion for creating synchronicities to change your faith and the World.</p>' +
 						'<p><strong>Please find the link to the book below: </p>' +
 						'<p><a href="https://bit.ly/3RSVe8x">"e-Book: Create your synchronicities"</a></strong></p>' +
 						'</br>' +
 						'<p>In 2023, I am launching my new online course about creating synchronicities with 10h of theory, exercises and examples.</p>' +
 						'<p>I will send you an email when it becomes available.</p>' +
 						'<em> Best Wishes,</em></p><p><em> Malgorzata Witkowska - Choose Frequency</em></p><p><strong> www.choosefrequency.com</strong></p></html>';
+						'<img src="https://www.choosefrequency.com/images/CF_LogoCircle.png"  alt="Choose Frequency" width="50" height="50"></img>';
 
 			Email.send({
 				Host : "smtp.elasticemail.com",
