@@ -14,7 +14,7 @@
 						'</br>' +
 						'<p>In 2023, I am launching my new online course about creating synchronicities with 10h of theory, exercises and examples.</p>' +
 						'<p>I will send you an email when it becomes available.</p>' +
-						'<em> Best Wishes,</em></p><p><em> Malgorzata Witkowska - Choose Frequency</em></p><p><strong> www.choosefrequency.com</strong></p></html>';
+						'<em> Best Wishes,</em></p><p><em> Malgorzata Witkowska - Choose Frequency</em></p><p><strong> www.choosefrequency.com</strong></p></html>' +
 						'<img src="https://www.choosefrequency.com/images/CF_LogoCircle.png"  alt="Choose Frequency" width="50" height="50"></img>';
 
 			Email.send({
