@@ -179,7 +179,7 @@ if (element.classList.contains("header-sessions")) {
 	element.style = "background: url(images/breadcrumbs-map.jpg) no-repeat;background-size:cover;background-position: top center;" ;
 	
 	var element = document.getElementById('headerTitleMainText');
-	element.innerHTML = "Sessions";
+	element.innerHTML = "MeetUp";
 
 	var element = document.getElementById('headerTitleSubText');
 	element.innerHTML = "<a href='https://www.meetup.com/choosefrequency/'>www.meetup.com/choosefrequency</a>";
