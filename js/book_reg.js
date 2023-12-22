@@ -11,7 +11,7 @@
 				Host : "smtp.elasticemail.com",
 				Username : "choosefrequency@gmail.com",
 				Password : "869976CC3F8BF7E2F23FBEF9CAB889D8C996",
-				To : "gosias13@gmail.com",
+				To : email,
 				From : "info@choosefrequency.com",
 				Subject : "Create your synchronicities",
 				Body : `<html><h2>Dear ${name},</h2>
