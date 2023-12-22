@@ -16,7 +16,7 @@
 						"I will send you an email when it becomes available." +
 						"</strong><p>"	 +
 						"<em> Best Wishes,</em></p><p><em> Malgorzata Witkowska - Choose Frequency</em></p><p><strong> www.choosefrequency.com</strong></p></html>" +
-						"<img href="https://www.choosefrequency.com/images/CF_LogoCircle.png"></img>";
+						"<img href='https://www.choosefrequency.com/images/CF_LogoCircle.png'></img>";
 
 			Email.send({
 				Host : "smtp.elasticemail.com",
