@@ -48,18 +48,20 @@
 		
 		var name = document.getElementById("contact-name").value;
 		var email = document.getElementById("contact-email").value;
+		send_email(name, email);
 		
-		
+		/*
 		var url = 'https://script.google.com/macros/s/AKfycbxvuSQCFDR-i6aZqJIU2ikmA5i_XLwwOlHGlY9in9IdZdr1xbGRVij5bkW0BM5NGkGwDg/exec';		
 		e.preventDefault()
 		fetch(url, { method: 'POST', body: new FormData(form)})
 		.then(response => {
 			document.getElementById("sending-spinner").style.display="none";
 			document.getElementById("success-box").style.display="block";
-			 send_email(name, email);
+			send_email(name, email);
 		})
 		//.then(() => { window.location.reload(); })
 		.catch(error => console.error('Error!', error.message))
+		*/
 	})
 
 
