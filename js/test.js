@@ -4,7 +4,29 @@
 		var name = document.getElementById("contact-name").value;
 		return (email != null && email != "" && name != null && name != "");
 	}
-	
+	function sendWithEmailJS (name, email){
+		var data = {
+			service_id: 'service_4jme4za',
+			template_id: 'template_gg8jtxh',
+			user_id: 'gxEtScNdk3G0-H1ol',
+			template_params: {
+				'username': 'Choose Frequency',
+				'g-recaptcha-response': '03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...'
+			}
+		};
+		 
+		$.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+			type: 'POST',
+			data: JSON.stringify(data),
+			contentType: 'application/json'
+		}).done(function() {
+			alert('Your mail is sent!');
+		}).fail(function(error) {
+			alert('Oops... ' + JSON.stringify(error));
+		});
+		
+		
+	}
 	function api_send (name, email) {
 		/* Initialization */
 		//const ElasticEmail = require('node_modules/@elasticemail/elasticemail-client');
@@ -103,7 +125,7 @@
 		var email = document.getElementById("contact-email").value;
 		
 		e.preventDefault();
-		api_send(name, email);
+		sendWithEmailJS(name, email);
 		
 /*		var url = 'https://script.google.com/macros/s/AKfycbxvuSQCFDR-i6aZqJIU2ikmA5i_XLwwOlHGlY9in9IdZdr1xbGRVij5bkW0BM5NGkGwDg/exec';		
 		e.preventDefault()
