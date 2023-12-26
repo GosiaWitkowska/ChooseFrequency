@@ -32,7 +32,7 @@
 		var options = {
 			apiKey: '8101B53C4E22323142EDB26DC6F020ECFD2D396D516ACB7BAABBAD7D30434CF3D975A10634A5D0A4E6006CB4D0197483',
 			apiUri: 'https://api.elasticemail.com/v4/emails/transactional',
-			apiVersion: 'v2'
+			apiVersion: 'v2',
 			Recipients: {
 				To: ["gosias13@gmail.com"]
 			},
