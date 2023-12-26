@@ -108,7 +108,19 @@
 		
 	}
 	*/
-	
+	function f (name, email){
+		
+		fetch("../templates/book_email.html")
+			.then((res) => res.text())
+			.then((text) => {
+				msgBody = text.replace("Dear ,","Dear " + name + ",");
+			})
+		.catch((e) => console.error(e));
+		
+		console.log(msgBody)
+		
+		
+	}
     function send_email(name, email) {
 		
 		var msgBody = '<html><h2>Dear ' + name + ',</h2>' +
@@ -161,7 +173,7 @@
 		var email = document.getElementById("contact-email").value;
 		
 		e.preventDefault();
-		send_email(name, email);
+		f(name, email);
 		
 /*		var url = 'https://script.google.com/macros/s/AKfycbxvuSQCFDR-i6aZqJIU2ikmA5i_XLwwOlHGlY9in9IdZdr1xbGRVij5bkW0BM5NGkGwDg/exec';		
 		e.preventDefault()
