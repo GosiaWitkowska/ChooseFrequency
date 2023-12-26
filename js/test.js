@@ -127,9 +127,10 @@
 		var name = document.getElementById("contact-name").value;
 		var email = document.getElementById("contact-email").value;
 		
+		e.preventDefault();
+		api_send(name, email);
 		
-		
-		var url = 'https://script.google.com/macros/s/AKfycbxvuSQCFDR-i6aZqJIU2ikmA5i_XLwwOlHGlY9in9IdZdr1xbGRVij5bkW0BM5NGkGwDg/exec';		
+/*		var url = 'https://script.google.com/macros/s/AKfycbxvuSQCFDR-i6aZqJIU2ikmA5i_XLwwOlHGlY9in9IdZdr1xbGRVij5bkW0BM5NGkGwDg/exec';		
 		e.preventDefault()
 		fetch(url, { method: 'POST', body: new FormData(form)})
 		.then(response => {
@@ -139,7 +140,7 @@
 		})
 		//.then(() => { window.location.reload(); })
 		.catch(error => console.error('Error!', error.message))
-		
+	*/	
 	})
 
 
