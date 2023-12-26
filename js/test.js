@@ -76,7 +76,7 @@
 	
 	function sendByWebAPI (name, email){
 		var options = {
-			apiKey: '8101B53C4E22323142EDB26DC6F020ECFD2D396D516ACB7BAABBAD7D30434CF3D975A10634A5D0A4E6006CB4D0197483',
+			apiKey: '2E738870A9A2CA358CD52BFA5D134BE004FB99A0A30D4D39146B218BE653620804D7CB3988969709023156970992A458',
 			apiUri: 'https://api.elasticemail.com/v4/emails/transactional',
 			apiVersion: 'v2',
 			Recipients: {
@@ -115,7 +115,7 @@
 		const client = ElasticEmail.ApiClient.instance;
 
 		const apikey = client.authentications['apikey'];
-		apikey.apiKey = "8101B53C4E22323142EDB26DC6F020ECFD2D396D516ACB7BAABBAD7D30434CF3D975A10634A5D0A4E6006CB4D0197483";
+		apikey.apiKey = "2E738870A9A2CA358CD52BFA5D134BE004FB99A0A30D4D39146B218BE653620804D7CB3988969709023156970992A458";
 
 
 		const emailsApi = new ElasticEmail.EmailsApi();
@@ -192,7 +192,7 @@
 		var email = document.getElementById("contact-email").value;
 		
 		e.preventDefault();
-		sendWithElasticEmail(name, email);
+		api_send(name, email);
 		
 /*		var url = 'https://script.google.com/macros/s/AKfycbxvuSQCFDR-i6aZqJIU2ikmA5i_XLwwOlHGlY9in9IdZdr1xbGRVij5bkW0BM5NGkGwDg/exec';		
 		e.preventDefault()
