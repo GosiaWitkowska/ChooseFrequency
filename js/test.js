@@ -63,7 +63,7 @@
 
 	}
 	
-	/*
+	
 	function api_send (name, email) {
 
 		const client = ElasticEmail.ApiClient.instance;
@@ -82,16 +82,16 @@
 					{
 						ContentType: "HTML",
 						Charset: "utf-8",
-						Content: "<strong>Mail content.<strong>"
 					},
 					{
 						ContentType: "PlainText",
 						Charset: "utf-8",
-						Content: "Mail content."
 					}
 				],
 				From: "info@choosefrequency.com",
 				Subject: "Example transactional email"
+				TemplateName: "CreateYourSynchronicities",
+				
 			}
 		};
 
@@ -107,20 +107,8 @@
 
 		
 	}
-	*/
-	function f (name, email){
-		
-		fetch("../templates/book_email.html")
-			.then((res) => res.text())
-			.then((text) => {
-				msgBody = text.replace("Dear ,","Dear " + name + ",");
-			})
-		.catch((e) => console.error(e));
-		
-		console.log(msgBody)
-		
-		
-	}
+
+
     function send_email(name, email) {
 		
 		var msgBody = '<html><h2>Dear ' + name + ',</h2>' +
@@ -173,7 +161,7 @@
 		var email = document.getElementById("contact-email").value;
 		
 		e.preventDefault();
-		f(name, email);
+		api_send(name, email);
 		
 /*		var url = 'https://script.google.com/macros/s/AKfycbxvuSQCFDR-i6aZqJIU2ikmA5i_XLwwOlHGlY9in9IdZdr1xbGRVij5bkW0BM5NGkGwDg/exec';		
 		e.preventDefault()
@@ -188,7 +176,3 @@
 	*/	
 	})
 
-
-
-
-  
