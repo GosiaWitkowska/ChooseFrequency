@@ -89,8 +89,8 @@
 					}
 				],
 				From: "info@choosefrequency.com",
-				Subject: "Example transactional email"
-				TemplateName: "CreateYourSynchronicities",
+				Subject: "Example transactional email",
+				TemplateName: "CreateYourSynchronicities"
 				
 			}
 		};
