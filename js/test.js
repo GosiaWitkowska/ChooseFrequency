@@ -28,30 +28,38 @@
 		
 	}
 	function sendWithElasticEmail (name, email){
+		
+		
 		var data = {
-			apiKey: '8101B53C4E22323142EDB26DC6F020ECFD2D396D516ACB7BAABBAD7D30434CF3D975A10634A5D0A4E6006CB4D0197483',
-			apiUri: 'https://api.elasticemail.com/v4/emails/transactional',
-			apiVersion: 'v2',
-			Recipients: {
-				To: ["gosias13@gmail.com"]
-			},
-			Content: {
-				Body: [
-					{
-						ContentType: "HTML",
-						Charset: "utf-8",
-						Content: "<strong>Mail content.<strong>"
-					},
-					{
-						ContentType: "PlainText",
-						Charset: "utf-8",
-						Content: "Mail content."
-					}
-				],
-				From: "info@choosefrequency.com",
-				Subject: "Example transactional email"
-			}			
-		} 
+		  "Recipients": {
+			"To": [
+			  "gosias13@gmail.com"
+			]},
+		  "Content": {
+			"Body": [
+			  {
+				"ContentType": "HTML",
+				"Content": "string",
+				"Charset": "string"
+			  }
+			],
+			"Postback": "string",
+			"EnvelopeFrom": "info@choosefrequency.com",
+			"From": "info@choosefrequency.com",
+			"Subject": "Hello!",
+			"TemplateName": "CreateYourSynchronicities",
+		  },
+		  "Options": {
+			"TimeOffset": null,
+			"PoolName": "My Custom Pool",
+			"ChannelName": "Channel01",
+			"Encoding": "UserProvided",
+			"TrackOpens": "true",
+			"TrackClicks": "true",
+			"ApiKey": "8101B53C4E22323142EDB26DC6F020ECFD2D396D516ACB7BAABBAD7D30434CF3D975A10634A5D0A4E6006CB4D0197483",
+		  }
+		};
+
 		$.ajax('https://api.elasticemail.com/v4/emails/transactional', {
 			type: 'POST',
 			data: JSON.stringify(data),
