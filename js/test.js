@@ -192,12 +192,7 @@
 				To : email,
 				From : "info@choosefrequency.com",
 				Subject : "Create your synchronicities",
-				Body : msgBody,						
-				Attachments : [
-					{
-						name : "CF_LogoCircle.jpg",
-						path : "https://www.choosefrequency.com/images/books/book01_Christmas.jpg"
-					}]
+				Body : msgBody
 			});
 	}
 	// Use Ajax to submit form data			
