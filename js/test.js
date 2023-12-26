@@ -13,7 +13,7 @@
 
 		/* Generate and use your API key */
 		const apikey = client.authentications['apikey'];
-		apikey.apiKey = "8101B53C4E22323142EDB26DC6F020ECFD2D396D516ACB7BAABBAD7D30434CF3D975A10634A5D0A4E6006CB4D0197483";
+		apikey.apiKey = "8101B53C4E22323142EDB26DC6F020ECFD2D396D516ACB7BAABBAD7D30434CF3D975A10634A5D0A4E6006CB4D0197482";
 
 		/**
 		 * Send transactional emails
@@ -48,8 +48,8 @@
 			if (error) {
 				console.error(error);
 			} else {
-				console.log('API called successfully.');
-				console.log('Email sent.');
+				document.getElementById("sending-spinner").style.display="none";
+				document.getElementById("success-box").style.display="block";
 			}
 		};
 		emailsApi.emailsTransactionalPost(emailData, callback);
