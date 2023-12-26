@@ -7,7 +7,7 @@
 	
 	function api_send (name, email) {
 		/* Initialization */
-		const ElasticEmail = require('@elasticemail/elasticemail-client');
+		const ElasticEmail = require('node_modules/@elasticemail/elasticemail-client');
 
 		const client = ElasticEmail.ApiClient.instance;
 
