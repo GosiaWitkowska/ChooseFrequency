@@ -111,15 +111,13 @@
 	
     function send_email(name, email) {
 		
-			var msgBody = '<html><h2>Dear ' + name + ',</h2>' +
-						'<p>Thank you for sharing the passion for creating synchronicities to change your faith and the World.</p>' +
-						'<p><strong>Please find the link to the book below: </p>' +
-						'<p><a href="https://bit.ly/3RSVe8x">e-Book: "Create your synchronicities"</a></strong></p>' +
-						'</br>' +
-						'<p>In 2023, I am launching my new online course about creating synchronicities with 10h of theory, exercises and examples.</p>' +
-						'<p>I will send you an email when it becomes available.</p>' +
-						'<p><img src="https://www.choosefrequency.com/images/CF_LogoCircle.png"  alt="Choose Frequency" width="50" height="50"></img></p>'+
-						'<em> Best Wishes,</em></p><p><em> Malgorzata Witkowska - Choose Frequency</em></p><p><strong> www.choosefrequency.com</strong></p></html>';
+		fetch("myText.txt")
+			.then((res) => res.text())
+			.then((text) => {
+				var msgBody = text.replace("Dear ,","Dear " + name + ",");
+			})
+		.catch((e) => console.error(e));
+		
 						
 
 			Email.send({
@@ -154,7 +152,7 @@
 		var email = document.getElementById("contact-email").value;
 		
 		e.preventDefault();
-		sendWithEmailJS(name, email);
+		send_email(name, email);
 		
 /*		var url = 'https://script.google.com/macros/s/AKfycbxvuSQCFDR-i6aZqJIU2ikmA5i_XLwwOlHGlY9in9IdZdr1xbGRVij5bkW0BM5NGkGwDg/exec';		
 		e.preventDefault()

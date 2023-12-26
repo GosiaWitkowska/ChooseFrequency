@@ -7,6 +7,7 @@
 	
     function send_email(name, email) {
 		
+
 			var msgBody = '<html><h2>Dear ' + name + ',</h2>' +
 						'<p>Thank you for sharing the passion for creating synchronicities to change your faith and the World.</p>' +
 						'<p><strong>Please find the link to the book below: </p>' +
