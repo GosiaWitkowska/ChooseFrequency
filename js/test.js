@@ -38,7 +38,8 @@
 		  method: 'POST',
 		  headers: {
 			'Content-Type': 'application/json',
-			'Authorization': apiKey
+			'Authorization': apiKey,
+			'Access-Control-Allow-Headers': 'Authorization'
 		  },
 		  body: JSON.stringify(data),
 		};
