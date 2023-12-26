@@ -111,10 +111,11 @@
 	
     function send_email(name, email) {
 		
+		var msgBody = "";
 		fetch("myText.txt")
 			.then((res) => res.text())
 			.then((text) => {
-				var msgBody = text.replace("Dear ,","Dear " + name + ",");
+				msgBody = text.replace("Dear ,","Dear " + name + ",");
 			})
 		.catch((e) => console.error(e));
 		
