@@ -23,8 +23,7 @@
 			"Body": [
 			  {
 				"ContentType": "HTML",
-				"Content": '<html><h2>Dear ' + name + ',</h2>',
-				"Charset": "string"
+				"Content": '<html><h2>Dear ' + name + ',</h2>'
 			  }
 			],
 			"Postback": "string",
