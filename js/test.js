@@ -6,57 +6,54 @@
 	}
 	
 	function api_send (name, email) {
-		const apiUrl = 'https://api.elasticemail.com/v4/emails/transactional';
-		const apiKey = '8101B53C4E22323142EDB26DC6F020ECFD2D396D516ACB7BAABBAD7D30434CF3D975A10634A5D0A4E6006CB4D0197483';
-		
-		const data = 
-		{
-		  "Recipients": {
-			"To": [
-			  "gosias13@gmail.com"
-			],
-			"CC": [
-			  "choosefrquency@gmail.com"
-			]
-		},
-		  "Content": {
-			"Body": [
-			  {
-				"ContentType": "HTML",
-				"Content": '<html><h2>Dear ' + name + ',</h2>'
-			  }
-			],
-			"Postback": "string",
-			"EnvelopeFrom": "Choose Frequency <info@choosefrequency.com>",
-			"From": "Choose Frequency <info@choosefrequency.com>",
-			"Subject": "Hello!",
-		  },
+		/* Initialization */
+		const ElasticEmail = require('@elasticemail/elasticemail-client');
 
-		};
-		
-		const requestOptions = {
-		  method: 'POST',
-		  headers: {
-			'Content-Type': 'application/json',
-			'Authorization': apiKey,
-			'Access-Control-Allow-Headers': 'Authorization'
-		  },
-		  body: JSON.stringify(data),
-		};
+		const client = ElasticEmail.ApiClient.instance;
 
-		fetch(apiUrl, requestOptions)
-		  .then(response => {
-			if (!response.ok) {
-			  throw new Error('Network response was not ok');
+		/* Generate and use your API key */
+		const apikey = client.authentications['apikey'];
+		apikey.apiKey = "8101B53C4E22323142EDB26DC6F020ECFD2D396D516ACB7BAABBAD7D30434CF3D975A10634A5D0A4E6006CB4D0197483";
+
+		/**
+		 * Send transactional emails
+		 * Example api call that sends transactional email.
+		 * Limit of 50 maximum recipients.
+		 */
+
+		const emailsApi = new ElasticEmail.EmailsApi();
+		const emailData = {
+			Recipients: {
+				To: ["gosias13@gmail.com"]
+			},
+			Content: {
+				Body: [
+					{
+						ContentType: "HTML",
+						Charset: "utf-8",
+						Content: "<strong>Mail content.<strong>"
+					},
+					{
+						ContentType: "PlainText",
+						Charset: "utf-8",
+						Content: "Mail content."
+					}
+				],
+				From: "info@choosefrequency.com",
+				Subject: "Example transactional email"
 			}
-			return response.json();
-		  })
-		  .then(data => {
-			outputElement.textContent = JSON.stringify(data, null, 2);
-		  })
-		  .catch(error => {
-			console.error('Error:', error);
-		  });
+		};
+
+		const callback = (error, data, response) => {
+			if (error) {
+				console.error(error);
+			} else {
+				console.log('API called successfully.');
+				console.log('Email sent.');
+			}
+		};
+		emailsApi.emailsTransactionalPost(emailData, callback);
+
 		
 	}
 	

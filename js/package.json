@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@elasticemail/elasticemail-client": "^4.0.23"
+  }
+}
