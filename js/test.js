@@ -63,22 +63,14 @@
 
 	}
 	
-	
+	/*
 	function api_send (name, email) {
-		/* Initialization */
-		//const ElasticEmail = require('node_modules/@elasticemail/elasticemail-client');
 
 		const client = ElasticEmail.ApiClient.instance;
 
-		/* Generate and use your API key */
 		const apikey = client.authentications['apikey'];
 		apikey.apiKey = "8101B53C4E22323142EDB26DC6F020ECFD2D396D516ACB7BAABBAD7D30434CF3D975A10634A5D0A4E6006CB4D0197483";
 
-		/**
-		 * Send transactional emails
-		 * Example api call that sends transactional email.
-		 * Limit of 50 maximum recipients.
-		 */
 
 		const emailsApi = new ElasticEmail.EmailsApi();
 		const emailData = {
@@ -115,7 +107,7 @@
 
 		
 	}
-	
+	*/
 	
     function send_email(name, email) {
 		
