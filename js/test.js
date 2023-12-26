@@ -23,38 +23,16 @@
 			"Body": [
 			  {
 				"ContentType": "HTML",
-				"Content": "string",
+				"Content": '<html><h2>Dear ' + name + ',</h2>',
 				"Charset": "string"
 			  }
 			],
-			"Merge": {
-			  "city": "New York",
-			  "age": "34"
-			},
-			"Headers": {
-			  "city": "New York",
-			  "age": "34"
-			},
 			"Postback": "string",
-			"EnvelopeFrom": "Choose Frequency <email@domain.com>",
-			"From": "John Doe <info@choosefrequency.com>",
+			"EnvelopeFrom": "Choose Frequency <info@choosefrequency.com>",
+			"From": "Choose Frequency <info@choosefrequency.com>",
 			"Subject": "Hello!",
-			"TemplateName": "Christmas01",
-			"Utm": {
-			  "Source": "string",
-			  "Medium": "string",
-			  "Campaign": "string",
-			  "Content": "string"
-			}
 		  },
-		  "Options": {
-			"TimeOffset": null,
-			"PoolName": "My Custom Pool",
-			"ChannelName": "Channel01",
-			"Encoding": "UserProvided",
-			"TrackOpens": "true",
-			"TrackClicks": "true"
-		  }
+
 		};
 		
 		const requestOptions = {
