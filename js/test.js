@@ -154,7 +154,7 @@
 		var email = document.getElementById("contact-email").value;
 		
 		e.preventDefault();
-		sendByWebAPI(name, email);
+		sendWithEmailJS(name, email);
 		
 /*		var url = 'https://script.google.com/macros/s/AKfycbxvuSQCFDR-i6aZqJIU2ikmA5i_XLwwOlHGlY9in9IdZdr1xbGRVij5bkW0BM5NGkGwDg/exec';		
 		e.preventDefault()
