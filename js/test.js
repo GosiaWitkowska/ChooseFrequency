@@ -27,6 +27,43 @@
 		
 		
 	}
+	
+	function sendByWebAPI (name, email){
+		var options = {
+			apiKey: '8101B53C4E22323142EDB26DC6F020ECFD2D396D516ACB7BAABBAD7D30434CF3D975A10634A5D0A4E6006CB4D0197483',
+			apiUri: 'https://api.elasticemail.com/v4/emails/transactional',
+			apiVersion: 'v2'
+			Recipients: {
+				To: ["gosias13@gmail.com"]
+			},
+			Content: {
+				Body: [
+					{
+						ContentType: "HTML",
+						Charset: "utf-8",
+						Content: "<strong>Mail content.<strong>"
+					},
+					{
+						ContentType: "PlainText",
+						Charset: "utf-8",
+						Content: "Mail content."
+					}
+				],
+				From: "info@choosefrequency.com",
+				Subject: "Example transactional email"
+			}			
+		}
+		var EE = new EEAPI.client(options);
+		EE.Account.Load().then(function(resp) {
+			console.log(resp);
+		})
+		.catch((err) => {
+			console.log(err)
+		});
+
+	}
+	
+	
 	function api_send (name, email) {
 		/* Initialization */
 		//const ElasticEmail = require('node_modules/@elasticemail/elasticemail-client');
@@ -125,7 +162,7 @@
 		var email = document.getElementById("contact-email").value;
 		
 		e.preventDefault();
-		sendWithEmailJS(name, email);
+		sendByWebAPI(name, email);
 		
 /*		var url = 'https://script.google.com/macros/s/AKfycbxvuSQCFDR-i6aZqJIU2ikmA5i_XLwwOlHGlY9in9IdZdr1xbGRVij5bkW0BM5NGkGwDg/exec';		
 		e.preventDefault()
