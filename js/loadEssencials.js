@@ -104,6 +104,7 @@ element.innerHTML =
 +"			  <li id='menu-contact' class='rd-nav-item'><a class='rd-nav-link' href='contacts.html'>Contact</a></li>"
 +"			  <li id='menu-collaboration' class='rd-nav-item'><a class='rd-nav-link' href='collaboration.html'>Collaboration</a></li>"
 +"			  <li id='menu-sessions' class='rd-nav-item'><a class='rd-nav-link' href='sessions.html'>MeetUp</a></li>"
++"			  <li class='rd-nav-item'><a class='rd-nav-link' href='https://paypal.me/choosefrequency?country.x=GB&locale.x=en_GB'>PayPal.Me</a></li>"
 +"			</ul>"
 +"		  </div>"
 +"		</div>"
