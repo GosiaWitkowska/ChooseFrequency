@@ -175,7 +175,8 @@ if (element.classList.contains("header-sessionsNarcissism")) {
 	var element = document.getElementById('headerTitleSubText');
 	element.innerHTML = "<a href='https://www.meetup.com/narcissism-relief/' target='_blank'>www.meetup.com/narcissism-relief</a>";
 	
-}if (element.classList.contains("header-books")) {
+}
+if (element.classList.contains("header-books")) {
 	var element = document.getElementById('menu-books');
 	element.classList.add("active");
 	
