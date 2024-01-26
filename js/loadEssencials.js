@@ -179,7 +179,7 @@ if (element.classList.contains("header-sessionsNarcissism")) {
 	element.style = "background: url(images/breadcrumbs-map.jpg) no-repeat;background-size:cover;background-position: top center;" ;
 	
 	var element = document.getElementById('headerTitleMainText');
-	element.innerHTML = "MeetUp";
+	element.innerHTML = "Narcissism Relief";
 
 	var element = document.getElementById('headerTitleSubText');
 	element.innerHTML = "<a href='https://www.meetup.com/narcissism-relief/' target='_blank'>www.meetup.com/narcissism-relief</a>";
@@ -204,7 +204,7 @@ if (element.classList.contains("header-sessions")) {
 	element.style = "background: url(images/breadcrumbs-map.jpg) no-repeat;background-size:cover;background-position: top center;" ;
 	
 	var element = document.getElementById('headerTitleMainText');
-	element.innerHTML = "MeetUp";
+	element.innerHTML = "Synchronicities";
 
 	var element = document.getElementById('headerTitleSubText');
 	element.innerHTML = "<a href='https://www.meetup.com/choosefrequency/' target='_blank'>www.meetup.com/choosefrequency</a>";
