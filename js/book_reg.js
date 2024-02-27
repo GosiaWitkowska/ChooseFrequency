@@ -86,6 +86,7 @@
 		//.then(() => { window.location.reload(); })
 		.catch(error => console.error('Error!', error.message))
 		*/
+		e.preventDefault()
 		document.getElementById("sending-spinner").style.display="none";
 		document.getElementById("success-box").style.display="block";
 		send_email(name, email);
