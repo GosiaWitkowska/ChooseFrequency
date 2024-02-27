@@ -34,7 +34,7 @@
 ' Dear '+ name +',</p></td></tr><tr class="wp-block-editor-paragraphblock-v1"><td valign="top" style="padding:0px 32px 32px 32px;background-color:#ffffff"><p class="paragraph" style="font-family:Open Sans, sans-serif;text-align:left;line-height:30.00px;font-size:15px;margin:0;color:#5f5f5f;word-break:normal">' +
 '<p><strong>Do you recognise synchronicities around you, or do you still call them coincidences?</strong> </p>' + 
 '<p></p>' +
-'<p>Do not wait for others to learn it before you to play the role in their synchronicities. Become a magician, too. </p>' +
+'<p>Do not wait for others to learn it before you to play the role in their synchronicities.<br> Become a magician, too. </p>' +
 '<p></p>' +
 '<p><strong>Click the button to see what this book has to offer.</strong> </p>' +   
 '</p></td></tr><tr class="wp-block-editor-buttonblock-v1" align="center"><td style="background-color:#ffffff;padding-top:20px;padding-right:20px;padding-bottom:60px;padding-left:20px;width:100%" valign="top"><table role="presentation" cellspacing="0" cellpadding="0" class="button-table"><tbody><tr><td valign="top" class="button-td button-td-primary" style="cursor:pointer;border:none;border-radius:4px;background-color:#5457ff;font-size:16px;font-family:Open Sans, sans-serif;width:fit-content;color:#ffffff"><a style="color:#ffffff" href="https://drive.google.com/file/d/1amIy8423DNc-uJHxX8eDJt97rSJA3AC0/view">' +
