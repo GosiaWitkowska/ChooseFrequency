@@ -35,6 +35,8 @@
 '<p><strong>Do you recognise synchronicities around you, or do you still call them coincidences?</strong> </p>' + 
 '<p></p>' +
 '<p>For example, when you want to attend an event but as a VIP guest. To cover the difference in pricing, you receive an unexpected refund from the insurance you purchased years ago. <br></p>' +
+'<p>When you need a formal outfit for a party and you do not have any in your wardrobe. To find in your email inbox a ten-day sales offer for elegant dresses and suits. <br></p>' +
+'<p>When you dream about sharing your message and showing people the easier path. To find yourself in a book club society and sign up for a course, "How to write a book in 90 days.", where they teach you how to self-publish. <br></p>' +
 '<p>Do not wait for others to learn it before you to play the role in their synchronicities.<br>Become a magician, too. </p>' +
 '<p></p>' +
 '<p><strong>Click the button to see what this book has to offer.</strong> </p>' +   
