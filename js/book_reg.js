@@ -34,14 +34,6 @@
 ' Dear '+ name +',</p></td></tr><tr class="wp-block-editor-paragraphblock-v1"><td valign="top" style="padding:0px 32px 32px 32px;background-color:#ffffff"><p class="paragraph" style="font-family:Open Sans, sans-serif;text-align:left;line-height:30.00px;font-size:15px;margin:0;color:#5f5f5f;word-break:normal">' +
 '<p><strong>Do you recognise synchronicities around you, or do you still call them coincidences?</strong> </p>' + 
 '<p></p>' +
-'<p>For example, when you want to attend an event but as a VIP guest. To cover the difference in pricing, you receive an unexpected refund from the insurance you purchased years ago. </p>' +
-'<p></p>' +
-'<p>When you need a formal outfit for your sister''s wedding and you do not have any in your wardrobe. To find in your email inbox a ten-day sales offer for elegant dresses and suits. </p>' +
-'<p></p>' +
-'<p>When you dream about sharing your message and showing people the easier path. To find yourself in a book club society and sign up for a course, "How to write a book in 90 days.", where they teach you how to self-publish. </p>' +
-'<p></p>' +
-'<p>Would you want to create these opportunities yourself, using the power of your thoughts and amplifying them with high-vibing emotions? </p>' +
-'<p></p>' +
 '<p>Do not wait for others to learn it before you to play the role in their synchronicities. Become a magician, too. </p>' +
 '<p></p>' +
 '<p><strong>Click the button to see what this book has to offer.</strong> </p>' +   
@@ -62,13 +54,20 @@
 '    </body>' +
 '</html>';	
 /*
-'<strong>Do you recognise synchronicities around you, or do you still call them coincidences?</strong> <br> <br>' + 
-'For example, when you want to attend an event but as a VIP guest. To cover the difference in pricing, you receive an unexpected refund from the insurance you purchased years ago. <br> <br>' +
-'When you need a formal outfit for your sister''s wedding and you do not have any in your wardrobe. To find in your email inbox a ten-day sales offer for elegant dresses and suits. <br> <br>' +
-'When you dream about sharing your message and showing people the easier path. To find yourself in a book club society and sign up for a course, "How to write a book in 90 days.", where they teach you how to self-publish. <br> <br>' +
-'Would you want to create these opportunities yourself, using the power of your thoughts and amplifying them with high-vibing emotions? <br> <br>' +
-'Do not wait for others to learn it before you to play the role in their synchronicities. Become a magician, too. <br> <br>' +
-'<strong>Click the button to see what this book has to offer.</strong>' +  
+'<p><strong>Do you recognise synchronicities around you, or do you still call them coincidences?</strong> </p>' + 
+'<p></p>' +
+'<p>For example, when you want to attend an event but as a VIP guest. To cover the difference in pricing, you receive an unexpected refund from the insurance you purchased years ago. </p>' +
+'<p></p>' +
+'<p>When you need a formal outfit for your sister''s wedding and you do not have any in your wardrobe. To find in your email inbox a ten-day sales offer for elegant dresses and suits. </p>' +
+'<p></p>' +
+'<p>When you dream about sharing your message and showing people the easier path. To find yourself in a book club society and sign up for a course, "How to write a book in 90 days.", where they teach you how to self-publish. </p>' +
+'<p></p>' +
+'<p>Would you want to create these opportunities yourself, using the power of your thoughts and amplifying them with high-vibing emotions? </p>' +
+'<p></p>' +
+'<p>Do not wait for others to learn it before you to play the role in their synchronicities. Become a magician, too. </p>' +
+'<p></p>' +
+'<p><strong>Click the button to see what this book has to offer.</strong> </p>' +   
+
 			
 */
 			Email.send({
