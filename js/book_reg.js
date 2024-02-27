@@ -50,7 +50,7 @@
 '        </center>' +
 '    </body>' +
 '</html>';	
-
+/*
 '<strong>Do you recognise synchronicities around you, or do you still call them coincidences?</strong></br></br>' + 
 'For example, when you want to attend an event but as a VIP guest. To cover the difference in pricing, you receive an unexpected refund from the insurance you purchased years ago. </br></br>' +
 'When you need a formal outfit for your sister''s wedding and you do not have any in your wardrobe. To find in your email inbox a ten-day sales offer for elegant dresses and suits. </br></br>' +
