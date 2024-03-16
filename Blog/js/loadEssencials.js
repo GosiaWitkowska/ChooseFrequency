@@ -104,7 +104,7 @@ element.innerHTML =
 +"			  <li id='menu-books' class='rd-nav-item'><a class='rd-nav-link' href='../books.html' target='_blank'>Book</a></li>" 
 +"			  <li id='menu-contact' class='rd-nav-item'><a class='rd-nav-link' href='../contacts.html'>Contact</a></li>"
 +"			  <li id='menu-collaboration' class='rd-nav-item'><a class='rd-nav-link' href='../collaboration.html'>Collaboration</a></li>"
-+"			  <li id='menu-sessionsGroups' class='rd-nav-item'><a class='rd-nav-link' href='../sessionsGroups.html'>MeetUp</a></li>"
++"			  <li id='menu-sessions' class='rd-nav-item'><a class='rd-nav-link' href='../sessions.html'>MeetUp</a></li>"
 +"			  <li class='rd-nav-item'><a class='rd-nav-link' href='https://paypal.me/choosefrequency?country.x=GB&locale.x=en_GB'  target='_blank'>PayPal.Me</a></li>"
 +"			</ul>"
 +"		  </div>"
@@ -161,8 +161,8 @@ if (elementBlog) elementBlog.innerHTML =
 
 
 if (element) {
-if (element.classList.contains("header-sessionsNarcissism")) {
-	var element = document.getElementById('menu-sessionsNarcissism');
+if (element.classList.contains("header-sessions")) {
+	var element = document.getElementById('menu-sessions');
 	element.classList.add("active");
 	
 	var element = document.getElementById('headerTitleImage');
