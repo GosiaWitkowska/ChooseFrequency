@@ -194,7 +194,7 @@ if (element.classList.contains("header-books")) {
 	
 
 	var element = document.getElementById('headerTitleSmallerMainText');
-	element.innerHTML = "e-book";
+	element.innerHTML = "Book";
 }	
 if (element.classList.contains("header-sessions")) {
 	var element = document.getElementById('menu-sessionsGroups');
