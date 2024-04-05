@@ -73,7 +73,7 @@ element.innerHTML =
 +"			</div>"
 +"		  </li>"
 +"		</ul>"
-+"		<a class='button button-190 button-circle btn-primary-rounded' href='../index.html#pricing'>program</a>"
++"		<a class='button button-190 button-circle btn-primary-rounded' href='../index.html#pricing'>book a session</a>"
 +"		<ul class='social-links'>"
 +"		  <li><a class='icon icon-sm icon-circle icon-circle-md icon-bg-white fa-youtube-play' href='https://www.youtube.com/@choosefrequency' target='_blank'></a></li>"
 +"		  <li><a class='icon icon-sm icon-circle icon-circle-md icon-bg-white fa-facebook' href='https://www.facebook.com/choosefrequency' target='_blank'></a></li>"
