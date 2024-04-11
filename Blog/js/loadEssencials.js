@@ -102,7 +102,6 @@ element.innerHTML =
 +"			  <li id='menu-blog' class='rd-nav-item'><a class='rd-nav-link' href='../blog.html' target='_blank'>Blog</a></li>"
 +"			  <li class='rd-nav-item'><a class='rd-nav-link' href='https://www.youtube.com/@choosefrequency'  target='_blank'>YouTube</a></li>"
 +"			  <li id='menu-books' class='rd-nav-item'><a class='rd-nav-link' href='../books.html' target='_blank'>Book</a></li>" 
-+"			  <li id='menu-contact' class='rd-nav-item'><a class='rd-nav-link' href='../contacts.html'>Contact</a></li>"
 +"			  <li id='menu-collaboration' class='rd-nav-item'><a class='rd-nav-link' href='../collaboration.html'>Collaboration</a></li>"
 +"			</ul>"
 +"		  </div>"
