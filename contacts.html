@@ -34,28 +34,29 @@
             <div class="col-xl-6 col-md-8 col-12">
 
 			
-              <form id="contact-form1" action="https://formsubmit.co/0bd0283d384637ed1280ef44ac4b2195" method="POST"> 
-				<input type="hidden" name="_subject" value="QUESTION FROM THE WEBSITE">
-				<input type="hidden" name="_next" value="https://choosefrequency.com/thankyou.html">
+              <form id="contact-form1" action="https://api.web3forms.com/submit" method="POST"> 
+				<input type="hidden" name="access_key" value="2de0d952-0d01-4def-9c8f-4ac43c22fb0f">
+
+				
                 <div class="form-wrap">
                   <label class="form-label" for="contact-name">Name<span class="req-symbol">*</span></label>
-                  <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required">
+                  <input class="form-input" id="contact-name" type="text" name="name" data-constraints="@Required" required>
                 </div>
                 <div class="form-wrap">
                   <label class="form-label" for="contact-email">E-Mail<span class="req-symbol">*</span></label>
-                  <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Required @Email">
+                  <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Required @Email" required>
                 </div>
                 <div class="form-wrap">
                   <label class="form-label label-textarea" for="contact-message">Message<span class="req-symbol">*</span></label>
                   <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required" rows="10"></textarea>
                 </div>
-                <!--Google captcha-->
-                <!--<div class="form-wrap text-left form-validation-left">
-                  <div class="recaptcha" id="captcha1" data-sitekey="6LeW0e4hAAAAAIzPf6U0JmlROpOVqoP4ROs5z926"></div>
-                </div>-->
+				<!-- hCaptcha Spam Protection -->
+				<div class="h-captcha" data-captcha="true"></div>
+
 				<div class="form-button group-sm text-center text-lg-left">
 					<button class="button button-primary" type="submit">Submit</button>
                 </div>
+				
               </form>
             </div>
           </div>
@@ -68,5 +69,6 @@
 	<script src="js/loadEssencials.js"></script>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+	<script src="https://web3forms.com/client/script.js" async defer></script>
   </body>
 </html>
