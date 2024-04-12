@@ -11,6 +11,17 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
 	<style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+	<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+	   (function(){
+		  emailjs.init({
+			publicKey: "9BI4kuPwAH29iBIF1",
+		  });
+	   })();
+	</script>
+	
   </head>
   <body>
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
@@ -32,28 +43,29 @@
           <!--RD Mailform-->
           <div class="row justify-content-center">
             <div class="col-xl-6 col-md-8 col-12">
-				<form id="contact-form" name="contact-form" action="" method="POST"> 
+				<form id="contact-form" name="contact-form"> 
 					<div class="form-wrap">
-					  <label class="form-label" for="contact-name">Name<span class="req-symbol">*</span></label>
-					  <input class="form-input" id="contact-name" type="text" name="contact-name" data-constraints="@Required" required="required">
+					  <label class="form-label" for="name">Name<span class="req-symbol">*</span></label>
+					  <input class="form-input" id="name" type="text" name="contact-name" data-constraints="@Required" required="required">
 					</div>
 					<div class="form-wrap">
-					  <label class="form-label" for="contact-email">E-Mail<span class="req-symbol">*</span></label>
-					  <input class="form-input" id="contact-email" type="email" name="contact-email" data-constraints="@Required @Email" required="required">
+					  <label class="form-label" for="email">E-Mail<span class="req-symbol">*</span></label>
+					  <input class="form-input" id="email" type="email" name="contact-email" data-constraints="@Required @Email" required="required">
 					</div>
 					<div class="form-wrap">
-						<label class="form-label label-textarea" for="contact-message">Message<span class="req-symbol">*</span></label>
-						<textarea class="form-input" id="contact-message" name="message" data-constraints="@Required" rows="10"></textarea>
+						<label class="form-label label-textarea" for="message">Message<span class="req-symbol">*</span></label>
+						<textarea class="form-input" id="message" name="message" data-constraints="@Required" rows="10"></textarea>
 					</div>
 				
 					<div class="form-button group-sm text-center text-lg-left">
-						<button class="button button-primary" type="submit" value="Submit" id="submit">Submit</button>
+						<button class="button button-primary" onclick="sendMail()" value="Submit" id="submit">Submit</button>
 					</div>
 					
 					
 				</form>
 				
-				
+				<div id="sending-spinner" class="cssload-speeding-wheel" style="display: none"></div>
+				<div id="success-box" style="display: none;"><h3>Thank you for sending your question. </h3></br><h5>I usually respond within 48 hours.</h5></div> 
 
             </div>
           </div>
@@ -66,6 +78,7 @@
 	<script src="js/loadEssencials.js"></script>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+	<script src="js/contacts.js"></script>
 
   </body>
 </html>
