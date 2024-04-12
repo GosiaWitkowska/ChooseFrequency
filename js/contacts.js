@@ -10,8 +10,8 @@ function sendMail() {
 
 	emailjs.send(serviceID, templateID, params).then(
 	  (response) => {
-		 //document.getElementById("sending-spinner").style.display="none";
-		 //document.getElementById("success-box").style.display="block";
+		 document.getElementById("contact-form").style.display="none";
+		 document.getElementById("success-box").style.display="block";
 	  },
 	  (error) => {
 		console.log('FAILED...', error);

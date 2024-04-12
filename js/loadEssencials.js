@@ -103,6 +103,8 @@ element.innerHTML =
 +"			  <li id='menu-books' class='rd-nav-item'><a class='rd-nav-link' href='books.html' target='_blank'>Book</a></li>" 
 +"			  <li id='menu-collaboration' class='rd-nav-item'><a class='rd-nav-link' href='collaboration.html'>Collaboration</a></li>"
 +"			  <li id='menu-sessions' class='rd-nav-item'><a class='rd-nav-link' href='sessions.html'>MeetUp</a></li>"
++"			  <li id='menu-contact' class='rd-nav-item'><a class='rd-nav-link' href='contacts.html'>Contact</a></li>"
+
 +"			</ul>"
 +"		  </div>"
 +"		</div>"
@@ -240,8 +242,7 @@ if (element.classList.contains("header-contact")) {
 	var element = document.getElementById('headerTitleSubText');
 	element.innerHTML = 
 	"<h3 class='font-weight-bold wow fadeInLeft'>call: +44 7758748210</h3>"
-	+"<p class='intro-description wow fadeInRight'>or send your questions below</p>"
-	+"<p class='intro-description wow fadeInRight'>I usually respond within 24 hours.</p>"	
+	+"<p class='intro-description wow fadeInRight'>or send your questions below</p>";
 }
 if (element.classList.contains("header-collaboration")) {
 	var element = document.getElementById('menu-collaboration');
