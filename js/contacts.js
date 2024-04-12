@@ -1,21 +1,21 @@
-function sendMail() {
-  var params = {
-    name: document.getElementById("name").value,
-    reply_to: document.getElementById("reply_to").value,
-    message: document.getElementById("message").value,
-  };
 
-  const serviceID = "service_crg9jfm";
-  const templateID = "template_gg8jtxh";
-
-	emailjs.send(serviceID, templateID, params).then(
-	  (response) => {
-		 document.getElementById("contact-form").style.display="none";
+$('#contact-form').on('submit', function(event) {
+    event.preventDefault(); // prevent reload
+    
+    var formData = new FormData(this);
+    formData.append('service_id', 'service_crg9jfm');
+    formData.append('template_id', 'template_gg8jtxh');
+    formData.append('user_id', '9BI4kuPwAH29iBIF1');
+ 
+    $.ajax('https://api.emailjs.com/api/v1.0/email/send-form', {
+        type: 'POST',
+        data: formData,
+        contentType: false, // auto-detection
+        processData: false // no need to parse formData to string
+    }).done(function() {
+         document.getElementById("contact-form").style.display="none";
 		 document.getElementById("success-box").style.display="block";
-	  },
-	  (error) => {
-		console.log('FAILED...', error);
-		alert(error)
-	  },
-	);
-}
+    }).fail(function(error) {
+        alert('Oops... ' + JSON.stringify(error));
+    });
+});
