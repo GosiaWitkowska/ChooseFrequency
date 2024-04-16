@@ -8823,7 +8823,8 @@ html.rd-navbar-fixed-linked .page {
 	.main-section {
 		background-attachment: fixed;
 		background-position: center;
-		background-image:url('../images/youtubeBanner.png') !important;
+		background-image:url('../images/Malgorzata_Witkowska_03.jpg') !important;
+		background-size: cover;
 	}
 	.first-picture {
 		display: none;
@@ -8832,11 +8833,26 @@ html.rd-navbar-fixed-linked .page {
 		display: inline;
 		padding-left: 10px;
 	}
+	.subtitle {
+		font-size: 15px;
+	}
+	.main-about-section {
+		margin-top: -230px;
+	}
+	.section-decorator, .decorate-layer {
+		display: none;
+	}
 }
 
 @media not screen and (max-width: 600px) {
 	.book_small {
 		display: none;
+	}
+	.subtitle {
+		font-size: 30px;
+	}
+	.main-about-section {
+		margin-top: -300px;
 	}
 }
 .blog-wrap  {
@@ -8916,14 +8932,8 @@ margin-bottom:1em;
 		display: none;
 	}
 }
-.main-about-section {
-	margin-top: -300px;
-}
 .main-section {
 	height: 420px;
-}
-.subtitle {
-	font-size: 30px;
 }
 .calling {
 	padding-bottom: 30px;
