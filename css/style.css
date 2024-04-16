@@ -176,13 +176,13 @@ h1 .big,
 @media (min-width: 576px) {
 	h1 .big,
 	.heading-1 .big {
-		font-size: 2em;
+		font-size: 0.7em;
 	}
 }
 
 h1 .biggest,
 .heading-1 .biggest {
-	font-size: 1.8em;
+	font-size: 1em;
 	line-height: 1em;
 	letter-spacing: -.02em;
 	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
@@ -191,7 +191,7 @@ h1 .biggest,
 @media (min-width: 576px) {
 	h1 .biggest,
 	.heading-1 .biggest {
-		font-size: 2.5em;
+		font-size: 1em;
 	}
 }
 
@@ -5064,7 +5064,7 @@ html [class*='section-'].section-bottom-0 {
 
 @media (min-width: 992px) {
 	.main-section {
-		padding: 220px 0 50px 0;
+		padding: 120px 0 50px 0;
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
@@ -5481,7 +5481,7 @@ html [class*='section-'].section-bottom-0 {
 	}
 	.devider-bottom:after {
 		width: 393px;
-		left: -175px;
+		left: -95px;
 		display: block;
 	}
 }
@@ -8915,4 +8915,16 @@ margin-bottom:1em;
 	.book_img {
 		display: none;
 	}
+}
+.main-about-section {
+	margin-top: -300px;
+}
+.main-section {
+	height: 420px;
+}
+.subtitle {
+	font-size: 30px;
+}
+.calling {
+	padding-bottom: 30px;
 }
