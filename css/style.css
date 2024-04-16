@@ -4955,9 +4955,7 @@ html [class*='section-'].section-bottom-0 {
 	.section-sm {
 		padding: 60px 0;
 	}
-	.section-md {
-		padding: 70px 0;
-	}
+
 	.section-lg {
 		padding: 85px 0;
 	}
@@ -4965,7 +4963,7 @@ html [class*='section-'].section-bottom-0 {
 
 @media (min-width: 992px) {
 	.section-md {
-		padding: 80px 0 90px;
+		padding: 50px 0 90px;
 	}
 	.section-lg {
 		padding: 100px 0;
@@ -8929,7 +8927,7 @@ margin-bottom:1em;
 @media (max-width: 725px) 
 {
 	.book_img {
-		display: none;
+		
 	}
 }
 .main-section {
