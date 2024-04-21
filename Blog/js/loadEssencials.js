@@ -94,11 +94,9 @@ element.innerHTML =
 +"		<div class='rd-navbar-main-element'>"
 +"		  <div class='rd-navbar-nav-wrap'>"
 +"			<ul class='rd-navbar-nav'>"
-+"			  <li id='menu-home' class='rd-nav-item'><a class='rd-nav-link' href='../index.html'>Home</a>"
-+"			  </li>"
-+"			  <li id='menu-about' class='rd-nav-item'><a class='rd-nav-link' href='../about.html'>About</a>"
-+"			  </li>"
-+"			  <!--<li class='rd-nav-item'><a class='rd-nav-link' href='https://drive.google.com/file/d/1ZpGNZkO8bej1v293Ttz4eq50MPqXrPXr/view?usp=share_link' target='_blank'>Book</a></li>-->"
++"			  <li id='menu-home' class='rd-nav-item'><a class='rd-nav-link' href='../index.html'>Home</a></li>"
++"			  <li id='menu-academy' class='rd-nav-item'><a class='rd-nav-link' href='../academy.html'>ACADEMY</a></li>"
++"			  <li id='menu-about' class='rd-nav-item'><a class='rd-nav-link' href='../about.html'>About</a></li>"
 +"			  <li id='menu-blog' class='rd-nav-item'><a class='rd-nav-link' href='../blog.html' target='_blank'>Blog</a></li>"
 +"			  <li class='rd-nav-item'><a class='rd-nav-link' href='https://www.youtube.com/@choosefrequency'  target='_blank'>YouTube</a></li>"
 +"			  <li id='menu-books' class='rd-nav-item'><a class='rd-nav-link' href='../books.html' target='_blank'>Book</a></li>" 
@@ -212,7 +210,7 @@ if (element.classList.contains("header-collaboration")) {
 	var element = document.getElementById('menu-collaboration');
 	element.classList.add("active");
 	var element = document.getElementById('headerTitleImage');
-	element.style = "background:url(../images/breadcrumbs-careers.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	element.style = "background:url(../images/breadcrumbs-competitions.jpg) no-repeat;background-size:cover;background-position: top center;" ;
 	
 	var element = document.getElementById('headerTitleMainText');
 	element.innerHTML = "Collaboration";
@@ -256,5 +254,13 @@ if (element.classList.contains("header-thankyouforbooking")) {
 	
 	var element = document.getElementById('headerTitleSubText');
 	element.innerHTML = "A calendar invitation has been sent to your email address";
+}
+if (element.classList.contains("header-academy")) {
+
+	var element = document.getElementById('headerTitleImage');
+	element.style = "background:url(images/breadcrumbs-academy.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	
+	var element = document.getElementById('headerTitleMainText');
+	element.innerHTML = "The Spiritual Awakening Academy Program";
 }
 }
