@@ -119,7 +119,7 @@ element.innerHTML = element.innerHTML +
 +"   <div class='row justify-content-center'>"
 +"	<div class='col-xl-8 text-center'>"
 +"	  <div class='rd-navbar-brand'>"
-+"		<!--Brand--><a href='index.html'><img class='brand-logo-dark' src='images/CF_LogoCircle.png' alt='' style='width:100%; height:auto; max-width:40px;'/></a>"
++"		<!--Brand--><a href='index.html'><img id='header-logo' class='brand-logo-dark' src='images/CF_LogoCircle.png' alt='' style='width:100%; height:auto; max-width:40px;'/></a>"
 +"	  </div>"			
 +"	  <h1 id='headerTitleMainText' class='font-weight-bold wow fadeInLeft'></h1>"
 +"	  <h3 id='headerTitleSmallerMainText' class='font-weight-bold wow fadeInLeft'></h3>"
@@ -298,5 +298,17 @@ if (element.classList.contains("header-academy")) {
 	
 	var element = document.getElementById('headerTitleMainText');
 	element.innerHTML = "The Spiritual Awakening Academy Program";
+}
+if (element.classList.contains("header-regforcall")) {
+
+	var element = document.getElementById('headerTitleImage');
+	element.style = "background:url(images/breadcrumbs-academy.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	
+	var element = document.getElementById('header-logo');
+	element.style = "display: none";
+	
+	
+	var element = document.getElementById('headerTitleMainText');
+	element.innerHTML = "The Spiritual Awakening Academy";
 }
 }

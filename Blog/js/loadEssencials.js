@@ -263,4 +263,16 @@ if (element.classList.contains("header-academy")) {
 	var element = document.getElementById('headerTitleMainText');
 	element.innerHTML = "The Spiritual Awakening Academy Program";
 }
+if (element.classList.contains("header-regforcall")) {
+
+	var element = document.getElementById('headerTitleImage');
+	element.style = "background-color: white" ;
+	
+	var element = document.getElementById('brand-logo-dark');
+	element.src = "images/SAA_Logo.png"
+	
+	
+	var element = document.getElementById('headerTitleMainText');
+	element.innerHTML = "The Spiritual Awakening Academy Program";
+}
 }
