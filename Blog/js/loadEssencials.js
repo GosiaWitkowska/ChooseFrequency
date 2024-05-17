@@ -230,8 +230,6 @@ if (element.classList.contains("header-terms")) {
 	var element = document.getElementById('headerTitleMainText');
 	element.innerHTML = "Terms and Conditions";
 	
-	var element = document.getElementById('headerTitleSubText');
-	element.innerHTML = "call: +44 7758748210";
 }
 if (element.classList.contains("header-thankyou")) {
 
