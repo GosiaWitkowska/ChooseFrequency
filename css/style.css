@@ -5385,7 +5385,10 @@ html [class*='section-'].section-bottom-0 {
 		background-image: url("../images/bg-image-2-1700x257.jpg");
 	}
 }
-
+.main-section {
+	background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.3)), url(../images/mainB.png);
+	
+}
 /*
 * Utilities custom
 */

@@ -95,7 +95,6 @@ element.innerHTML =
 +"		  <div class='rd-navbar-nav-wrap'>"
 +"			<ul class='rd-navbar-nav'>"
 +"			  <li id='menu-home' class='rd-nav-item'><a class='rd-nav-link' href='index.html'>Home</a></li>"
-+"			  <li id='menu-academy' class='rd-nav-item'><a class='rd-nav-link' href='academy.html'>ACADEMY</a></li>"
 +"			  <li id='menu-about' class='rd-nav-item'><a class='rd-nav-link' href='about.html'>About</a></li>"
 +"			  <li id='menu-blog' class='rd-nav-item'><a class='rd-nav-link' href='blog.html' target='_blank'>Blog</a></li>"
 +"			  <li class='rd-nav-item'><a class='rd-nav-link' href='https://www.youtube.com/@choosefrequency'  target='_blank'>YouTube</a></li>"
