@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content= 
+		"width=device-width, initial-scale=1.0"> 
+	
+    <link rel="stylesheet" href="css/popup.css">
+	
+</head> 
+
+<body> 
+
+	<button class="btn-open-popup" onclick="togglePopup()"> 
+	Open Popup Form 
+	</button> 
+
+	<div id="popupOverlay" class="overlay-container"> 
+		<div class="popup-box"> 
+			<div class="tidycal-embed" data-path="choosefrequency/hypnotherapy"></div>
+			<button class="btn-close-popup"	onclick="togglePopup()"> Cancel </button> 
+		</div> 
+	</div> 
+	
+	
+
+	<script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>
+
+	<script> 
+		function togglePopup() { 
+			const overlay = document.getElementById('popupOverlay'); 
+			overlay.classList.toggle('show'); 
+		} 
+	</script> 
+</body> 
+
+</html>
