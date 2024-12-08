@@ -8873,13 +8873,13 @@ html.rd-navbar-fixed-linked .page {
 	  -webkit-transform: scale(1.1); /* Safari 3-8 */
 	  transform: scale(1.1); 
 	}
-	.ubs_07 { padding: 35px 90px 35px 90px; }
-	.ubs_06 { padding: 35px 110px 35px 110px; }
-	.ubs_05 { padding: 35px 130px 35px 130px; }
-	.ubs_04 { padding: 35px 160px 35px 160px; }
-	.ubs_03 { padding: 35px 190px 35px 190px; }
-	.ubs_02 { padding: 35px 210px 35px 210px; }
-	.ubs_01 { padding: 35px 240px 35px 240px; }
+	.ubs_07 { padding: 35px 70px 35px 30px; }
+	.ubs_06 { padding: 35px 70px 35px 30px; }
+	.ubs_05 { padding: 35px 70px 35px 30px; }
+	.ubs_04 { padding: 35px 70px 35px 30px; }
+	.ubs_03 { padding: 35px 70px 35px 30px; }
+	.ubs_02 { padding: 35px 70px 35px 30px; }
+	.ubs_01 { padding: 35px 70px 35px 30px; }
 }
 .blog-wrap  {
 	box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) !important;
