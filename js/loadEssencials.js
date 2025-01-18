@@ -159,6 +159,14 @@ if (elementBlog) elementBlog.innerHTML =
 
 
 if (element) {
+if (element.classList.contains("header-workbook")) {
+	
+	var element = document.getElementById('headerTitleImage');
+	element.style = "background: url(images/breadcrumbs-map.jpg) no-repeat;background-size:cover;background-position: top center;" ;
+	
+	var element = document.getElementById('headerTitleMainText');
+	element.innerHTML = "QCC Workbook";
+}
 if (element.classList.contains("header-sessions")) {
 	var element = document.getElementById('menu-sessions');
 	element.classList.add("active");
