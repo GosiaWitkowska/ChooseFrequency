@@ -18,7 +18,6 @@ element.innerHTML =
 +"            <div class='col-lg-3 col-sm-8 wow fadeInUp'>"
 +"              <P class='footer-classic-title'>contact info</P>"
 +"              <div class='d-block offset-top-0'><span class='d-lg-block'>London, UK</span></div><a class='d-inline-block accent-link' href='mailto:#'>info@choosefrequency.com</a>"
-+"			  <a class='d-inline-block' href='tel:#'>+44 7758748210</a>"
 +"            </div>"
 +"            <div class='col-lg-2 col-sm-4 wow fadeInUp' data-wow-delay='.3s'>"
 +"              <P class='footer-classic-title'>Quick Links</P>"
@@ -54,12 +53,6 @@ element.innerHTML =
 +"	<div class='rd-navbar-aside-outer rd-navbar-collapse bg-gray-dark'>"
 +"	  <div class='rd-navbar-aside'>"
 +"		<ul class='list-inline navbar-contact-list'>"
-+"		  <li>"
-+"			<div class='unit unit-spacing-xs align-items-center'>"
-+"			  <div class='unit-left'><span class='icon text-middle fa-phone'></span></div>"
-+"			  <div class='unit-body'><a href='tel:#'>+44 07758748210</a></div>"
-+"			</div>"
-+"		  </li>"
 +"		  <li>"
 +"			<div class='unit unit-spacing-xs align-items-center'>"
 +"			  <div class='unit-left'><span class='icon text-middle fa-envelope'></span></div>"
@@ -246,9 +239,7 @@ if (element.classList.contains("header-contact")) {
 	element.innerHTML = "Contact Me";
 	
 	var element = document.getElementById('headerTitleSubText');
-	element.innerHTML = 
-	"<h3 class='font-weight-bold wow fadeInLeft'>call: +44 7758748210</h3>"
-	+"<p class='intro-description wow fadeInRight'>or send your questions below</p>";
+	element.innerHTML = "<p class='intro-description wow fadeInRight'>send your questions below</p>";
 }
 if (element.classList.contains("header-collaboration")) {
 	var element = document.getElementById('menu-collaboration');
